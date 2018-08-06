@@ -7,3 +7,10 @@
 <p align="center">
   <img src="https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Info-graphs/Day%201.jpg">
 </p>
+
+## 简单线性回归模型 | [第2天](https://github.com/wengJJ/100-Days-Of-ML-Code/blob/master/Code/Day2_Simple_Linear_Regression.md)
+
+<p align="center">
+  <img src="https://github.com/wengJJ/100-Days-Of-ML-Code/blob/master/Info-graphs/Day%202.jpg">
+</p>
+
