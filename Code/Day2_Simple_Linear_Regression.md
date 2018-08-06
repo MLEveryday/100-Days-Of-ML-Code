@@ -1,4 +1,4 @@
-# Simple Linear Regression
+# 简单线性回归模型
 
 
 <p align="center">
@@ -20,7 +20,7 @@ from sklearn.cross_validation import train_test_split
 X_train, X_test, Y_train, Y_test = train_test_split( X, Y, test_size = 1/4, random_state = 0) 
 ```
 
-# 第二步：训练集使用简单线性模型来训练
+# 第二步：训练集使用简单线性回归模型来训练
  ```python
  from sklearn.linear_model import LinearRegression
  regressor = LinearRegression()
