@@ -26,6 +26,11 @@
   <img src="https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Info-graphs/Day%204.jpg">
 </p>
 
+## K近邻法 | 第7天
+
+<p align="center">
+  <img src="https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Info-graphs/Day%207.jpg">
+</p>
 
 ## 支持向量机(SVM) | 第12天
 
