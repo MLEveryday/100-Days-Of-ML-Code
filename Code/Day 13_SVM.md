@@ -66,7 +66,7 @@ plt.legend()
 plt.show()
 ```
 <p align="center">
-  <img src="">
+  <img src="https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Other%20Docs/SVM_training%20set.png">
 </p>
 
 ## 测试集合结果可视化
@@ -89,5 +89,5 @@ plt.legend()
 plt.show()
 ```
 <p align="center">
-  <img src="">
+  <img src="https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Other%20Docs/SVM_test%20set.png">
 </p>
