@@ -14,6 +14,12 @@
   <img src="https://github.com/wengJJ/100-Days-Of-ML-Code/blob/master/Info-graphs/Day%202.jpg">
 </p>
 
+## 多元线性回归 | 第3天
+
+<p align="center">
+  <img src="https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Info-graphs/Day%203.png">
+</p>
+
 
 ## 支持向量机(SVM) | 第12天
 
