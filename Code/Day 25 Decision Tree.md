@@ -3,7 +3,6 @@
   <img src="https://github.com/MachineLearning100/100-Days-Of-ML-Code/raw/master/Info-graphs/Day%2023%20-%20Chinese.jpg">
 </p>
 
-https://github.com/MachineLearning100/100-Days-Of-ML-Code/raw/master/Info-graphs/Day%2023%20-%20Chinese.jpg
 ### 导入需要用到的python库
 ```python
 import numpy as np

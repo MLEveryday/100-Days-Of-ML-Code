@@ -20,6 +20,17 @@
   <img src="https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Info-graphs/Day%203.png">
 </p>
 
+## 逻辑回归 | 第4天
+
+<p align="center">
+  <img src="https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Info-graphs/Day%204.jpg">
+</p>
+
+## K近邻法 | 第7天
+
+<p align="center">
+  <img src="https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Info-graphs/Day%207.jpg">
+</p>
 
 ## 支持向量机(SVM) | 第12天
 
@@ -40,4 +51,4 @@
 
 ## 决策树 | 第25天
 
-决策树实现
+[决策树实现](https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Code/Day%2025%20Decision%20Tree.md)
