@@ -32,6 +32,6 @@
   <img src="https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Info-graphs/Day%2023%20-%20Chinese.jpg">
 </p>
 
-## 决策树 | 第23天
+## 决策树 | 第25天
 
 决策树实现
