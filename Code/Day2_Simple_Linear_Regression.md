@@ -36,9 +36,11 @@ X_train, X_test, Y_train, Y_test = train_test_split( X, Y, test_size = 1/4, rand
  ```python
  plt.scatter(X_train , Y_train, color = 'red')
  plt.plot(X_train , regressor.predict(X_train), color ='blue')
+ plt.show()
  ```
  ## 测试集结果可视化
  ```python
  plt.scatter(X_test , Y_test, color = 'red')
  plt.plot(X_test , regressor.predict(X_test), color ='blue')
+ plt.show()
  ``` 
