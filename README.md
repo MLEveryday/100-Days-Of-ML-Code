@@ -42,7 +42,7 @@
   <img src="https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Info-graphs/Day%207.jpg">
 </p>
 
-## K近邻法(k-NN | 第11天
+## K近邻法(k-NN) | 第11天
 
 [K近邻法(k-NN)实现](https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Code/Day%2011%20K-NN.md)
 
