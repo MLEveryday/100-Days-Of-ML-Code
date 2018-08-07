@@ -2,19 +2,25 @@
 
 英文原版请移步[Avik-Jain](https://github.com/Avik-Jain/100-Days-Of-ML-Code)。
 
-## 数据预处理 | [第1天](https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Code/Day%201_Data%20Preprocessing.md)
+## 数据预处理 | 第1天
+
+[数据预处理实现](https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Code/Day%201_Data%20Preprocessing.md)
 
 <p align="center">
   <img src="https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Info-graphs/Day%201.jpg">
 </p>
 
-## 简单线性回归模型 | [第2天](https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Code/Day2_Simple_Linear_Regression.md)
+## 简单线性回归模型 | 第2天
+
+[简单线性回归实现](https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Code/Day2_Simple_Linear_Regression.md)
 
 <p align="center">
   <img src="https://github.com/wengJJ/100-Days-Of-ML-Code/blob/master/Info-graphs/Day%202.jpg">
 </p>
 
 ## 多元线性回归 | 第3天
+
+[多元逻辑回归实现](https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Code/Day3_Multiple_Linear_Regression.md)
 
 <p align="center">
   <img src="https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Info-graphs/Day%203.png">
