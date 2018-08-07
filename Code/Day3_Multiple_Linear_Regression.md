@@ -39,7 +39,7 @@ X = X[: , 1:]
 from sklearn.cross_validation import train_test_split
 X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size = 0.2, random_state = 0)
 ```
-## 第2步： 在训练集上训练使用多元线性回归模型
+## 第2步： 在训练集上训练多元线性回归模型
 ```python
 from sklearn.linear_model import LinearRegression
 regressor = LinearRegression()
