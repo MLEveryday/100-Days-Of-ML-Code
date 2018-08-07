@@ -20,7 +20,7 @@
 
 ## 多元线性回归 | 第3天
 
-[多元逻辑回归实现](https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Code/Day3_Multiple_Linear_Regression.md)
+[多元线性回归实现](https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Code/Day3_Multiple_Linear_Regression.md)
 
 <p align="center">
   <img src="https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Info-graphs/Day%203.png">
@@ -42,9 +42,9 @@
   <img src="https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Info-graphs/Day%207.jpg">
 </p>
 
-## K近邻法 | 第11天
+## K近邻法(k-NN | 第11天
 
-[K近邻法实现](https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Code/Day%2011%20K-NN.md)
+[K近邻法(k-NN)实现](https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Code/Day%2011%20K-NN.md)
 
 ## 支持向量机(SVM) | 第12天
 
