@@ -4,12 +4,12 @@
 
 # 目录
 - [数据预处理](#数据预处理-|-第1天)
-- [简单线性回归]
+- [简单线性回归](#单线性回归-|-第2天)
 - [多元线性回归](#多元线性回归-|-第3天)
-- [逻辑回归]
-- [k近邻法(k-NN)]
-- [支持向量机(SVM)]
-_ [决策树]
+- [逻辑回归](#逻辑回归-|-第4天)
+- [k近邻法(k-NN)](#K近邻法(k-NN)-|-第7天)
+- [支持向量机(SVM)](#支持向量机(SVM)-|-第12天)
+- [决策树](#决策树-|-第23天)
 
 ## 数据预处理 | 第1天
 
@@ -19,7 +19,7 @@ _ [决策树]
   <img src="https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Info-graphs/Day%201.jpg">
 </p>
 
-## 简单线性回归模型 | 第2天
+## 简单线性回归 | 第2天
 
 [简单线性回归实现](https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Code/Day2_Simple_Linear_Regression.md)
 
@@ -45,7 +45,7 @@ _ [决策树]
 
 逻辑回归实现
 
-## K近邻法 | 第7天
+## K近邻法(k-NN) | 第7天
 
 <p align="center">
   <img src="https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Info-graphs/Day%207.jpg">
