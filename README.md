@@ -14,3 +14,13 @@
   <img src="https://github.com/wengJJ/100-Days-Of-ML-Code/blob/master/Info-graphs/Day%202.jpg">
 </p>
 
+
+## 支持向量机(SVM) | 第12天
+
+<p align="center">
+  <img src="https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Info-graphs/Day%2012.jpg">
+</p>
+
+## 支持向量机(SVM) | 第13天
+
+[SVM实现](https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Code/Day%2013_SVM.md)
