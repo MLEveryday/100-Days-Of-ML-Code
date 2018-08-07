@@ -26,11 +26,19 @@
   <img src="https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Info-graphs/Day%204.jpg">
 </p>
 
+## 逻辑回归 | 第6天
+
+逻辑回归实现
+
 ## K近邻法 | 第7天
 
 <p align="center">
   <img src="https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Info-graphs/Day%207.jpg">
 </p>
+
+## K近邻法 | 第11天
+
+K近邻法实现
 
 ## 支持向量机(SVM) | 第12天
 
