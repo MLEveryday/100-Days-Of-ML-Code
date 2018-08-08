@@ -41,6 +41,11 @@
   <img src="https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Info-graphs/Day%204.jpg">
 </p>
 
+## 逻辑回归 | 第5天
+
+今天我深入研究了逻辑回归到底是什么，以及它背后的数学是什么。学习了如何计算代价函数，以及如何使用梯度下降法来将代价函数降低到最小。<br>
+由于时间关系，我将隔天发布信息图。如果有人在机器学习领域有一定经验，并愿意帮我编写代码文档，也了解github的Markdown语法，请在领英联系我。
+
 ## 逻辑回归 | 第6天
 
 [逻辑回归实现](https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Code/Day%206_Logistic_Regression.md)
