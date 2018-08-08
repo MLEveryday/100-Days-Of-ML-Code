@@ -53,7 +53,7 @@
 
 ## K近邻法(k-NN) | 第11天
 
-[K近邻法(k-NN)实现](https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Code/Day%2011%20K-NN.md)
+[K近邻法(k-NN)实现](https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Code/Day%2011_K-NN.md)
 
 ## 支持向量机(SVM) | 第12天
 
