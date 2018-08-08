@@ -2,6 +2,7 @@
 
 ### 数据集 | 社交网络
 ![](https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Other%20Docs/data.png?raw=true)
+
 该数据集包含了社交网络中用户的信息。这些信息涉及用户ID,性别,年龄以及预估薪资。一家汽车公司刚刚推出了他们新型的豪华SUV，我们尝试预测哪些用户会购买这种全新SUV。并且在最后一列用来表示用户是否购买。我们将建立一种模型来预测用户是否购买这种SUV，该模型基于两个变量，分别是年龄和预计薪资。因此我们的特征矩阵将是这两列。我们尝试寻找用户年龄与预估薪资之间的某种相关性，以及他是否购买SUV的决定。
 
 ### 步骤1 | 数据预处理
@@ -14,7 +15,7 @@ import pandas as pd
 ```
 
 #### 导入数据集
-![这里](https://github.com/Avik-Jain/100-Days-Of-ML-Code/blob/master/datasets/Social_Network_Ads.csv)获取数据集 
+[这里](https://github.com/Avik-Jain/100-Days-Of-ML-Code/blob/master/datasets/Social_Network_Ads.csv)获取数据集 
 
 ```python
 dataset = pd.read_csv('Social_Network_Ads.csv')
