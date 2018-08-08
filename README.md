@@ -85,5 +85,5 @@
 ## 随机森林 | 第33天
 
 <p align="center">
-  <img src="https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Info-graphs/Day%2033.jpg?raw=true">
+  <img src="https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Info-graphs/Day%2033.png?raw=true">
 </p>
