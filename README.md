@@ -13,7 +13,7 @@
 
 ## 数据预处理 | 第1天
 
-[数据预处理实现](https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Code/Day%201_Data%20Preprocessing.md)
+[数据预处理实现](https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Code/Day%201_Data_Preprocessing.md)
 
 <p align="center">
   <img src="https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Info-graphs/Day%201.jpg">
@@ -43,7 +43,7 @@
 
 ## 逻辑回归 | 第6天
 
-[逻辑回归实现](https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Code/Day6%20Logistic%20Regression.md)
+[逻辑回归实现](https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Code/Day%206_Logistic_Regression.md)
 
 ## K近邻法(k-NN) | 第7天
 
@@ -74,4 +74,4 @@
 
 ## 决策树 | 第25天
 
-[决策树实现](https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Code/Day%2025%20Decision%20Tree.md)
+[决策树实现](https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Code/Day%2025%20Decision_Tree.md)
