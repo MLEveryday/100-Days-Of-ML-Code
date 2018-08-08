@@ -43,7 +43,7 @@
 
 ## 逻辑回归 | 第6天
 
-逻辑回归实现
+[逻辑回归实现](https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Code/Day6%20Logistic%20Regression.md)
 
 ## K近邻法(k-NN) | 第7天
 
