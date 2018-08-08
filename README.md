@@ -82,3 +82,7 @@
 [决策树实现](https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Code/Day%2025%20Decision_Tree.md)
 
 ## 随机森林 | 第33天
+
+<p align="center">
+  <img src="https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Info-graphs/Day%2033.jpg?raw=true">
+</p>
