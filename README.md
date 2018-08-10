@@ -127,6 +127,10 @@
   <img src="https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Info-graphs/Day%2023%20-%20Chinese.jpg">
 </p>
 
+## 统计学习理论的介绍 | 第24天
+
+Bloomberg ML课程的第3课介绍了一些核心概念，如输入空间，动作空间，结果空间，预测函数，损失函数和假设空间。
+
 ## 决策树 | 第25天
 
 [决策树实现](https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Code/Day%2025%20Decision_Tree.md)
