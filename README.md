@@ -57,6 +57,20 @@
   <img src="https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Info-graphs/Day%207.jpg">
 </p>
 
+## 逻辑回归背后的数学 | 第8天
+
+为了使我对逻辑回归的见解更加清晰，我在网上搜索了一些资源或文章，然后我就发现了Saishruthi Swaminathan的<a href = "https://towardsdatascience.com/logistic-regression-detailed-overview-46c4da4303bc">这篇文章</a><br>
+
+它给出了逻辑回归的详细描述。请务必看一看。
+
+## 支持向量机(SVM) | 第9天
+
+直观了解SVM是什么以及如何使用它来解决分类问题。
+
+## 支持向量机和K近邻法 | 第10天
+
+了解更多关于SVM如何工作和实现knn算法的知识。
+
 ## K近邻法(k-NN) | 第11天
 
 [K近邻法(k-NN)实现](https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Code/Day%2011_K-NN.md)
