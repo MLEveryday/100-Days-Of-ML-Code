@@ -133,7 +133,7 @@ Bloomberg ML课程的第3课介绍了一些核心概念，如输入空间，动�
 
 ## 决策树 | 第25天
 
-[决策树实现](https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Code/Day%2025%20Decision_Tree.md)
+[决策树实现](https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Code/Day%2025_Decision_Tree.md)
 
 ## 随机森林 | 第33天
 
