@@ -62,6 +62,11 @@ plt.ylabel('Estimated Salary')
 plt.legend()
 plt.show()
 ```
+
+<p align="center">
+  <img src="https://github.com/AnnaXJGe/100-Days-Of-ML-Code/blob/master/Info-graphs/random_forest_classification_training_set.png">
+</p>
+
 ## 将测试集结果可视化
 ```python
 from matplotlib.colors import ListedColormap
@@ -81,3 +86,7 @@ plt.ylabel('Estimated Salary')
 plt.legend()
 plt.show()
 ```
+
+<p align="center">
+  <img src="https://github.com/AnnaXJGe/100-Days-Of-ML-Code/blob/master/Info-graphs/random_forest_classification_test_set.png">
+</p>
