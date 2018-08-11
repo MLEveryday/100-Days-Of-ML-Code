@@ -138,5 +138,5 @@ Bloomberg ML课程的第3课介绍了一些核心概念，如输入空间，动�
 ## 随机森林 | 第33天
 
 <p align="center">
-  <img src="https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Info-graphs/Day%2033.png?raw=true">
+  <img src="https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Info-graphs/Day%2033.png">
 </p>
