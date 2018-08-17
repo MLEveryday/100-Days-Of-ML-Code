@@ -1,4 +1,7 @@
 # Day 13 | 支持向量机 (SVM)
+<p align="center">
+  <img src="https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Info-graphs/Day%2012.jpg">
+</p>
 
 ## 导入库
 ```python
