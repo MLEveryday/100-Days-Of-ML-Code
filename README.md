@@ -29,7 +29,7 @@
 </p>
 
 ## 多元线性回归 | 第3天
-[多元线性回归实现](https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Code/Day3_Multiple_Linear_Regression.md)
+[多元线性回归实现](https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Code/Day%203_Multiple_Linear_Regression.md)
 
 <p align="center">
   <img src="https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Info-graphs/Day%203.png">
