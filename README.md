@@ -13,6 +13,7 @@
 - [支持向量机(SVM)](#支持向量机svm--第12天)
 - [决策树](#决策树--第23天)
 - [随机森林](#随机森林--第33天)
+- [K-均值聚类](#K-均值聚类--第43天)
 
 ## 数据预处理 | 第1天
 [数据预处理实现](https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Code/Day%201_Data_Preprocessing.md)
@@ -154,3 +155,9 @@ Bloomberg ML课程的第3课介绍了一些核心概念，如输入空间，动�
 
 ## 随机森林 | 第34天
 [随机森林实现](https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Code/Day%2034_Random_Forests.md)
+
+## K-均值聚类 | 第43天
+转到无监督学习，并研究了聚类。可在[作者网站](http://www.avikjain.me/)查询。发现一个奇妙的[动画](http://shabal.in/visuals/kmeans/6.html)有助于理解K-均值聚类。
+<p align="center">
+  <img src="https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Info-graphs/Day%2043.jpg">
+</p>
