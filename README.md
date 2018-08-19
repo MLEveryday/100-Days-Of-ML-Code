@@ -13,7 +13,7 @@
 - [支持向量机(SVM)](#支持向量机svm--第12天)
 - [决策树](#决策树--第23天)
 - [随机森林](#随机森林--第33天)
-- [K-均值聚类](#K-均值聚类--第43天)
+- [K-均值聚类](#k-均值聚类--第43天)
 
 ## 数据预处理 | 第1天
 [数据预处理实现](https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Code/Day%201_Data_Preprocessing.md)
