@@ -158,6 +158,21 @@ Bloomberg ML课程的第3课介绍了一些核心概念，如输入空间，动�
 ## 随机森林 | 第34天
 [随机森林实现](https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Code/Day%2034_Random_Forests.md)
 
+## 什么是神经网络？ | 深度学习，第1章 | 第 35天
+Youtube频道3Blue1Brown中有精彩的视频介绍神经网络。这个视频提供了很好的解释，并使用手写数字数据集演示基本概念。
+
+视频在[这里](https://www.youtube.com/watch?v=aircAruvnKk&t=7s)。
+
+## 梯度下降法，神经网络如何学习 | 深度学习，第2章 | 第36天
+Youtube频道3Blue1Brown关于神经网络的第2部分，这个视频用有趣的方式解释了梯度下降法。推荐必须观看169.
+
+视频在[这里](https://www.youtube.com/watch?v=IHZwWFHWa-w)。
+
+## 反向传播法究竟做什么？ | 深度学习，第3章 | 第37天
+Youtube频道3Blue1Brown关于神经网络的第3部分，这个视频主要介绍了偏导数和反向传播法。
+
+视频在[这里](https://www.youtube.com/watch?v=Ilg3gGewQ5U)。
+
 ## K-均值聚类 | 第43天
 转到无监督学习，并研究了聚类。可在[作者网站](http://www.avikjain.me/)查询。发现一个奇妙的[动画](http://shabal.in/visuals/kmeans/6.html)有助于理解K-均值聚类。
 <p align="center">
