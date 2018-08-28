@@ -173,6 +173,23 @@ Youtube频道3Blue1Brown关于神经网络的第3部分，这个视频主要介�
 
 B站视频在[这里](https://space.bilibili.com/88461692/#/channel/detail?cid=26587)。
 
+## 反向传播法演算 | 深度学习，第4章 | 第38天
+Youtube频道3Blue1Brown关于神经网络的第3部分，这个视频主要介绍了偏导数和反向传播法。
+
+B站视频在[这里](https://space.bilibili.com/88461692/#/channel/detail?cid=26587)。
+
+## 第1部分 | 深度学习基础Python，TensorFlow和Keras | 第39天
+视频地址在[这里](https://www.youtube.com/watch?v=wQ8BIBpya2k&t=19s&index=2&list=PLQVvvaa0QuDfhTox0AjmQ6tvTgMBZBEXN)。
+
+## 第2部分 | 深度学习基础Python，TensorFlow和Keras | 第40天
+视频地址在[这里](https://www.youtube.com/watch?v=wQ8BIBpya2k&t=19s&index=2&list=PLQVvvaa0QuDfhTox0AjmQ6tvTgMBZBEXN)。
+
+## 第3部分 | 深度学习基础Python，TensorFlow和Keras | 第41天
+视频地址在[这里](https://www.youtube.com/watch?v=wQ8BIBpya2k&t=19s&index=2&list=PLQVvvaa0QuDfhTox0AjmQ6tvTgMBZBEXN)。
+
+## 第4部分 | 深度学习基础Python，TensorFlow和Keras | 第42天
+视频地址在[这里](https://www.youtube.com/watch?v=wQ8BIBpya2k&t=19s&index=2&list=PLQVvvaa0QuDfhTox0AjmQ6tvTgMBZBEXN)。
+
 ## K-均值聚类 | 第43天
 转到无监督学习，并研究了聚类。可在[作者网站](http://www.avikjain.me/)查询。发现一个奇妙的[动画](http://shabal.in/visuals/kmeans/6.html)有助于理解K-均值聚类。
 <p align="center">
