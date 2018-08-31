@@ -16,6 +16,7 @@
   - [随机森林](#随机森林--第33天)
 - 无监督学习
   - [K-均值聚类](#k-均值聚类--第43天)
+  - [层次聚类](#层次聚类--第54天)
 
 ## 数据预处理 | 第1天
 [数据预处理实现](https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Code/Day%201_Data_Preprocessing.md)
@@ -194,4 +195,8 @@ B站视频在[这里](https://space.bilibili.com/88461692/#/channel/detail?cid=2
 转到无监督学习，并研究了聚类。可在[作者网站](http://www.avikjain.me/)查询。发现一个奇妙的[动画](http://shabal.in/visuals/kmeans/6.html)有助于理解K-均值聚类。
 <p align="center">
   <img src="https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Info-graphs/Day%2043.jpg">
+</p>
+## 层次聚类 | 第54天
+<p align="center">
+  <img src="https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Info-graphs/Day%2054.jpg">
 </p>
