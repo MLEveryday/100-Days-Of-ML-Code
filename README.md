@@ -185,6 +185,7 @@ B站视频在[这里](https://space.bilibili.com/88461692/#/channel/detail?cid=2
 
 ## 第2部分 | 深度学习基础Python，TensorFlow和Keras | 第40天
 视频地址在[这里](https://www.youtube.com/watch?v=wQ8BIBpya2k&t=19s&index=2&list=PLQVvvaa0QuDfhTox0AjmQ6tvTgMBZBEXN)。
+<br>中文文字版[notebook](https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Code/Day%2040.ipynb)。
 
 ## 第3部分 | 深度学习基础Python，TensorFlow和Keras | 第41天
 视频地址在[这里](https://www.youtube.com/watch?v=wQ8BIBpya2k&t=19s&index=2&list=PLQVvvaa0QuDfhTox0AjmQ6tvTgMBZBEXN)。
