@@ -205,25 +205,39 @@ B站视频在[这里](https://space.bilibili.com/88461692/#/channel/detail?cid=2
 得到JK VanderPlas写的书《Python数据科学手册（Python Data Science HandBook）》，Jupyter notebooks在[这里](https://github.com/jakevdp/PythonDataScienceHandbook)。
 <br>**[高清中文版pdf](https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Other%20Docs/Python%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6%E6%89%8B%E5%86%8C.zip)**
 <br>第2章：NumPy介绍，包括数据类型、数组和数组计算。
-br>代码如下：
-<br>[NumPy介绍](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/02.00-Introduction-to-NumPy.ipynb)
-<br>[理解Python中的数据类型](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/02.01-Understanding-Data-Types.ipynb)
-<br>[NumPy数组基础](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/02.02-The-Basics-Of-NumPy-Arrays.ipynb)
-<br>[NumPy数组的计算：通用函数](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/02.03-Computation-on-arrays-ufuncs.ipynb)
+<br>代码如下：
+<br>[2. NumPy入门](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/02.00-Introduction-to-NumPy.ipynb)
+<br>[2.1 理解Python中的数据类型](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/02.01-Understanding-Data-Types.ipynb)
+<br>[2.2 NumPy数组基础](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/02.02-The-Basics-Of-NumPy-Arrays.ipynb)
+<br>[2.3 NumPy数组的计算：通用函数](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/02.03-Computation-on-arrays-ufuncs.ipynb)
 
 ## 深入研究 | NUMPY | 第46天
 第2章： 聚合, 比较运算符和广播。
 <br>代码如下：
-<br>[聚合：最小值、最大值和其他值](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/02.04-Computation-on-arrays-aggregates.ipynb)
-<br>[数组的计算：广播](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/02.05-Computation-on-arrays-broadcasting.ipynb)
-<br>[比较、掩码和布尔运算](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/02.06-Boolean-Arrays-and-Masks.ipynb)
+<br>[2.4 聚合：最小值、最大值和其他值](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/02.04-Computation-on-arrays-aggregates.ipynb)
+<br>[2.5 数组的计算：广播](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/02.05-Computation-on-arrays-broadcasting.ipynb)
+<br>[2.6 比较、掩码和布尔运算](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/02.06-Boolean-Arrays-and-Masks.ipynb)
 
 ## 深入研究 | NUMPY | 第47天
 第2章： 花哨的索引，数组排序，结构化数据。
 <br>代码如下：
-<br>[花哨的索引](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/02.07-Fancy-Indexing.ipynb)
-<br>[数组的排序](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/02.08-Sorting.ipynb)
-<br>[结构化数据：NumPy的结构化数组](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/02.09-<br>Structured-Data-NumPy.ipynb)
+<br>[2.7 花哨的索引](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/02.07-Fancy-Indexing.ipynb)
+<br>[2.8 数组的排序](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/02.08-Sorting.ipynb)
+<br>[2.9 结构化数据：NumPy的结构化数组](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/02.09-<br>Structured-Data-NumPy.ipynb)
+
+## 深入研究 | PANDAS | 第48天
+第3章：Pandas数据处理
+<br>包含Pandas对象，数据取值与选择，数值运算方法，处理缺失值，层级索引，合并数据集。
+<br>代码如下：
+<br>[3 Pandas数据处理](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/03.00-Introduction-to-Pandas.ipynb)
+<br>[3.1 Pandas对象简介](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/03.01-Introducing-Pandas-Objects.ipynb)
+<br>[3.2 数据取值与选择](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/03.02-Data-Indexing-and-Selection.ipynb)
+<br>[3.3 Pandas数值运算方法](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/03.03-Operations-in-Pandas.ipynb)
+<br>[3.4 处理缺失值](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/03.04-Missing-Values.ipynb)
+<br>[3.5 层级索引](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/03.05-Hierarchical-Indexing.ipynb)
+<br>[3.6 合并数据集：ConCat和Append方法](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/03.06-Concat-And-Append.ipynb)
+
+
 
 ## 层次聚类 | 第54天
 [动画演示](https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Other%20Docs/%E5%B1%82%E6%AC%A1%E8%81%9A%E7%B1%BB.gif)
