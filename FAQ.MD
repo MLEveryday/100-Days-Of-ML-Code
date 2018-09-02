@@ -16,3 +16,6 @@
 正在翻译[文字版](https://pythonprogramming.net/introduction-deep-learning-python-tensorflow-keras/)，敬请期待。
 
 详见[issue#52](https://github.com/MachineLearning100/100-Days-Of-ML-Code/issues/52)。
+
+### 4.《Python数据科学手册》
+**[高清中文版pdf](https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Other%20Docs/Python%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6%E6%89%8B%E5%86%8C.zip)**，[Jupyter notebooks](https://github.com/jakevdp/PythonDataScienceHandbook)。
