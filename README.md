@@ -206,7 +206,7 @@ B站视频在[这里](https://space.bilibili.com/88461692/#/channel/detail?cid=2
 <br>**[高清中文版pdf](https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Other%20Docs/Python%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6%E6%89%8B%E5%86%8C.zip)**
 <br>第2章：NumPy介绍，包括数据类型、数组和数组计算。
 <br>代码如下：
-<br>[2. NumPy入门](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/02.00-Introduction-to-NumPy.ipynb)
+<br>[2 NumPy入门](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/02.00-Introduction-to-NumPy.ipynb)
 <br>[2.1 理解Python中的数据类型](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/02.01-Understanding-Data-Types.ipynb)
 <br>[2.2 NumPy数组基础](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/02.02-The-Basics-Of-NumPy-Arrays.ipynb)
 <br>[2.3 NumPy数组的计算：通用函数](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/02.03-Computation-on-arrays-ufuncs.ipynb)
@@ -237,7 +237,44 @@ B站视频在[这里](https://space.bilibili.com/88461692/#/channel/detail?cid=2
 <br>[3.5 层级索引](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/03.05-Hierarchical-Indexing.ipynb)
 <br>[3.6 合并数据集：ConCat和Append方法](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/03.06-Concat-And-Append.ipynb)
 
+## 深入研究 | PANDAS | 第49天
+第3章：完成剩余内容-合并与连接，累计与分组，数据透视表。
+<br>代码如下：
+<br>[3.7 合并数据集：合并与连接](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/03.07-Merge-and-Join.ipynb)
+<br>[3.8 累计与分组](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/03.08-Aggregation-and-Grouping.ipynb)
+<br>[3.9 数据透视表](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/03.09-Pivot-Tables.ipynb)
 
+## 深入研究 | PANDAS | 第50天
+第3章：向量化字符串操作，处理时间序列。
+<br>代码如下：
+<br>[3.10 向量化字符串操作](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/03.10-Working-With-Strings.ipynb)
+<br>[3.11 处理时间序列](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/03.11-Working-with-Time-Series.ipynb)
+<br>[3.12 高性能Pandas：eval()与query()](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/03.12-Performance-Eval-and-Query.ipynb)
+
+## 深入研究 | MATPLOTLIB | 第51天
+第4章：Matplotlib数据可视化
+<br>学习简易线形图, 简易散点图，密度图与等高线图.
+<br>代码如下：
+<br>[4 Matplotlib数据可视化](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/04.00-Introduction-To-Matplotlib.ipynb)
+<br>[4.1 简易线形图](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/04.01-Simple-Line-Plots.ipynb)
+<br>[4.2 简易散点图](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/04.02-Simple-Scatter-Plots.ipynb)
+<br>[4.3 可视化异常处理](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/04.03-Errorbars.ipynb)
+<br>[4.4 密度图与等高线图](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/04.04-Density-and-Contour-Plots.ipynb)
+
+## 深入研究 | MATPLOTLIB | 第52天
+第4章：Matplotlib数据可视化
+<br>学习直方图，配置图例，配置颜色条，多子图。
+<br>代码如下： 
+<br>[4.5 直方图](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/04.05-Histograms-and-Binnings.ipynb)
+<br>[4.6 配置图例](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/04.06-Customizing-Legends.ipynb)
+<br>[4.7 配置颜色条](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/04.07-Customizing-Colorbars.ipynb)
+<br>[4.8 多子图](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/04.08-Multiple-Subplots.ipynb)
+<br>[4.9 文字与注释](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/04.09-Text-and-Annotation.ipynb)
+
+## 深入研究 | MATPLOTLIB | 第53天
+第4章：Matplotlib数据可视化
+<br>学习三维绘图。
+<br>[4.12 画三维图](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/04.12-Three-Dimensional-Plotting.ipynb)
 
 ## 层次聚类 | 第54天
 [动画演示](https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Other%20Docs/%E5%B1%82%E6%AC%A1%E8%81%9A%E7%B1%BB.gif)
