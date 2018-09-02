@@ -193,11 +193,41 @@ B站视频在[这里](https://space.bilibili.com/88461692/#/channel/detail?cid=2
 
 ## K-均值聚类 | 第43天
 转到无监督学习，并研究了聚类。可在[作者网站](http://www.avikjain.me/)查询。发现一个奇妙的[动画](http://shabal.in/visuals/kmeans/6.html)有助于理解K-均值聚类。
+
 <p align="center">
   <img src="https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Info-graphs/Day%2043.jpg">
 </p>
 
+## K-均值聚类 | 第44天
+实现（待添加代码）
+
+## 深入研究 | NUMPY | 第45天
+得到JK VanderPlas写的书《Python数据科学手册（Python Data Science HandBook）》，Jupyter notebooks在[这里](https://github.com/jakevdp/PythonDataScienceHandbook)。
+<br>**[高清中文版pdf](https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Other%20Docs/Python%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6%E6%89%8B%E5%86%8C.zip)**
+<br>第2章：NumPy介绍，包括数据类型、数组和数组计算。
+br>代码如下：
+<br>[NumPy介绍](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/02.00-Introduction-to-NumPy.ipynb)
+<br>[理解Python中的数据类型](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/02.01-Understanding-Data-Types.ipynb)
+<br>[NumPy数组基础](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/02.02-The-Basics-Of-NumPy-Arrays.ipynb)
+<br>[NumPy数组的计算：通用函数](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/02.03-Computation-on-arrays-ufuncs.ipynb)
+
+## 深入研究 | NUMPY | 第46天
+第2章： 聚合, 比较运算符和广播。
+<br>代码如下：
+<br>[聚合：最小值、最大值和其他值](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/02.04-Computation-on-arrays-aggregates.ipynb)
+<br>[数组的计算：广播](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/02.05-Computation-on-arrays-broadcasting.ipynb)
+<br>[比较、掩码和布尔运算](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/02.06-Boolean-Arrays-and-Masks.ipynb)
+
+## 深入研究 | NUMPY | 第47天
+第2章： 花哨的索引，数组排序，结构化数据。
+<br>代码如下：
+<br>[花哨的索引](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/02.07-Fancy-Indexing.ipynb)
+<br>[数组的排序](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/02.08-Sorting.ipynb)
+<br>[结构化数据：NumPy的结构化数组](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/02.09-<br>Structured-Data-NumPy.ipynb)
+
 ## 层次聚类 | 第54天
+[动画演示](https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Other%20Docs/%E5%B1%82%E6%AC%A1%E8%81%9A%E7%B1%BB.gif)
+
 <p align="center">
   <img src="https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Info-graphs/Day%2054.jpg">
 </p>
