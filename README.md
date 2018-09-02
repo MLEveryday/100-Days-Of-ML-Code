@@ -193,6 +193,7 @@ B站视频在[这里](https://space.bilibili.com/88461692/#/channel/detail?cid=2
 
 ## 第4部分 | 深度学习基础Python，TensorFlow和Keras | 第42天
 视频地址在[这里](https://www.youtube.com/watch?v=wQ8BIBpya2k&t=19s&index=2&list=PLQVvvaa0QuDfhTox0AjmQ6tvTgMBZBEXN)。
+<br>中文文字版[notebook](https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Code/Day%2042.ipynb)。
 
 ## K-均值聚类 | 第43天
 转到无监督学习，并研究了聚类。可在[作者网站](http://www.avikjain.me/)查询。发现一个奇妙的[动画](http://shabal.in/visuals/kmeans/6.html)有助于理解K-均值聚类。
