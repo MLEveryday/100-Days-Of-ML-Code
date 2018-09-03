@@ -20,3 +20,6 @@
 ### 4.《Python数据科学手册》
 **[高清中文版pdf](https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Other%20Docs/Python%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6%E6%89%8B%E5%86%8C.zip)**，[Jupyter notebooks](https://github.com/jakevdp/PythonDataScienceHandbook)。
 <br>仅作为个人学习，不能用于商业用途。
+
+### 5. 微信群
+见[issuse#59](https://github.com/MachineLearning100/100-Days-Of-ML-Code/issues/59)
