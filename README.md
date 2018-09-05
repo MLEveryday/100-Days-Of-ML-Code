@@ -139,7 +139,7 @@ B站播放列表在[这里](https://space.bilibili.com/88461692/#/channel/detail
 ## 微积分的本质 | 第30天
 完成上一播放列表后，YouTube推荐了新内容《微积分的本质》，今天看完了其中的3个视频，包括导数、链式法则、乘积法则和指数导数。
 
-B站播放列表在[这里](https://space.bilibili.com/88461692/#/channel/detail?cid=9450)。
+B站播放列表在[这里](https://space.bilibili.com/88461692/#/channel/detail?cid=13407)。
 
 ## 微积分的本质 | 第31天
 观看了2个视频，内容包括隐分化与极限。
