@@ -25,4 +25,4 @@ plt.plot(X_train , regressor.predict(X_train), color ='blue')
 # Visualizing the test results
 plt.scatter(X_test , Y_test, color = 'red')
 plt.plot(X_test , regressor.predict(X_test), color ='blue')
-
+plt.show()
