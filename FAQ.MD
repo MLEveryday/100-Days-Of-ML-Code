@@ -23,3 +23,6 @@
 
 ### 5. 微信群
 见[issuse#59](https://github.com/MachineLearning100/100-Days-Of-ML-Code/issues/59)
+
+### 6. 常用工具推荐
+见[issuse#60](https://github.com/MLEveryday/100-Days-Of-ML-Code/issues/60)
