@@ -6,7 +6,7 @@
 
 如图所示，通过6步完成数据预处理。
 
-此例用到的[数据](https://github.com/Avik-Jain/100-Days-Of-ML-Code/blob/master/datasets/Data.csv)，[代码](https://github.com/MLEveryday/100-Days-Of-ML-Code/blob/master/Code/Day%201_Data%20Preprocessing.py)。
+此例用到的[数据](https://github.com/Avik-Jain/100-Days-Of-ML-Code/blob/master/datasets/Data.csv)，[代码](https://github.com/MLEveryday/100-Days-Of-ML-Code/blob/master/Code/Day%201_Data_Preprocessing.py)。
 
 ## 第1步：导入库
 ```Python
@@ -41,7 +41,7 @@ Y =  labelencoder_Y.fit_transform(Y)
 ```
 ## 第5步：拆分数据集为训练集合和测试集合
 ```python
-from sklearn.cross_validation import train_test_split
+from sklearn.model_selection import train_test_split
 X_train, X_test, Y_train, Y_test = train_test_split( X , Y , test_size = 0.2, random_state = 0)
 ```
 ## 第6步：特征量化

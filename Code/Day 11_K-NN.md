@@ -27,7 +27,7 @@ y = dataset.iloc[:, 4].values
 
 ## 将数据划分成训练集和测试集
 ```python
-from sklearn.cross_validation import train_test_split
+from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.25, random_state = 0)
 ```
 ## 特征缩放

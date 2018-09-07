@@ -46,11 +46,9 @@ print(X)
 print("Y")
 print(Y)
 
-#Step 5: Splitting the datasets into training sets and Test sets
+
 #使用train_test_split()方法拆分为测试集合和训练集合（20:80）
-#现在的版本 cross_validation包下的功能都移到model_selection下面了 包括cross_validation 
-#现在0.19应该只是warning,0.20版本可能就会直接报错了 
-from sklearn.cross_validation import train_test_split
+from sklearn.model_selection import train_test_split
 X_train, X_test, Y_train, Y_test = train_test_split( X , Y , test_size = 0.2, random_state = 0)
 print("---------------------")
 print("Step 5: Splitting the datasets into training sets and Test sets")
