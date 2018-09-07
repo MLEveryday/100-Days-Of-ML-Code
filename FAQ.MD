@@ -13,7 +13,7 @@
 感谢网友在[issue#45](https://github.com/MachineLearning100/100-Days-Of-ML-Code/issues/45)的反馈。
 
 ### 3. Deep Learning basics with Python, TensorFlow and Keras
-[文字版](https://pythonprogramming.net/introduction-deep-learning-python-tensorflow-keras/)的中文版间第39天到第42天。
+[文字版](https://pythonprogramming.net/introduction-deep-learning-python-tensorflow-keras/)的中文版见第39天到第42天。
 
 详见[issue#52](https://github.com/MachineLearning100/100-Days-Of-ML-Code/issues/52)。
 
@@ -22,12 +22,12 @@
 <br>仅作为个人学习，不能用于商业用途。
 
 ### 5. 微信群
-见[issuse#59](https://github.com/MachineLearning100/100-Days-Of-ML-Code/issues/59)
+见[issue#59](https://github.com/MachineLearning100/100-Days-Of-ML-Code/issues/59)
 
 ### 6. 常用工具推荐
-见[issuse#60](https://github.com/MLEveryday/100-Days-Of-ML-Code/issues/60)
+见[issue#60](https://github.com/MLEveryday/100-Days-Of-ML-Code/issues/60)
 
 ### 7. sklearn版本
-sklearn工具包0.19和0.20版本，cross_validation在0.20版本是将被移除的并转移到model_selection包下。
+sklearn工具包0.19和0.20版本，cross_validation在0.20版本是将被移除的并转移到model_selection包下。要排除这些问题，注意平时运行时的出现warning即可。
 
-要排除这些问题，注意平时运行时的出现warning即可
+间[issue63](https://github.com/MLEveryday/100-Days-Of-ML-Code/issues/63)。
