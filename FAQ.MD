@@ -30,4 +30,4 @@
 ### 7. sklearn版本
 sklearn工具包0.19和0.20版本，cross_validation在0.20版本是将被移除的并转移到model_selection包下。要排除这些问题，注意平时运行时的出现warning即可。
 
-间[issue63](https://github.com/MLEveryday/100-Days-Of-ML-Code/issues/63)。
+见[issue63](https://github.com/MLEveryday/100-Days-Of-ML-Code/issues/63)。
