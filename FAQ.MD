@@ -31,3 +31,9 @@
 sklearn工具包0.19和0.20版本，cross_validation在0.20版本是将被移除的并转移到model_selection包下。要排除这些问题，注意平时运行时的出现warning即可。
 
 见[issue63](https://github.com/MLEveryday/100-Days-Of-ML-Code/issues/63)。
+
+### 8. Python版本
+建议使用Python3。使用Python2.7运行示例代码时可能有问题，例如：线性回归如下代码中“1/4”，在Python2.7中不执行。
+```python
+X_train, X_test, Y_train, Y_test = train_test_split( X, Y, test_size = 1/4, random_state = 0) 
+```
