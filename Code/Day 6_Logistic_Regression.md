@@ -14,7 +14,7 @@
 #### 导入库
 
 ```python
-import numpy as numpy
+import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 ```
