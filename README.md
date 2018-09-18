@@ -82,7 +82,7 @@
 今天我在线性相关数据上实现了SVM。使用Scikit-Learn库。在scikit-learn中我们有SVC分类器，我们用它来完成这个任务。将在下一次实现时使用kernel-trick。Python代码见[此处](https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Code/Day%2013_SVM.py),Jupyter notebook见[此处](https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Code/Day%2013_SVM.ipynb)。
 
 ## 朴素贝叶斯分类器(Naive Bayes Classifier)和黑盒机器学习(Black Box Machine Learning) | 第15天
-学习不同类型的朴素贝叶斯分类器同时开始<a href="https://bloomberg.github.io/foml/#home">Bloomberg</a>的课程。课程列表中的第一个是黑河机器学习。它给出了预测函数，特征提取，学习算法，性能评估，交叉验证，样本偏差，非平稳性，过度拟合和超参数调整的整体观点。
+学习不同类型的朴素贝叶斯分类器同时开始<a href="https://bloomberg.github.io/foml/#home">Bloomberg</a>的课程。课程列表中的第一个是黑盒机器学习。它给出了预测函数，特征提取，学习算法，性能评估，交叉验证，样本偏差，非平稳性，过度拟合和超参数调整的整体观点。
 
 ## 通过内核技巧实现支持向量机 | 第16天
 使用Scikit-Learn库实现了SVM算法以及内核函数，该函数将我们的数据点映射到更高维度以找到最佳超平面。
