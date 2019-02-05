@@ -15,9 +15,10 @@ import pandas as pd
 ```
 ## 第2步：导入数据集
 ```python
-dataset = pd.read_csv('Data.csv')
-X = dataset.iloc[ : , :-1].values
-Y = dataset.iloc[ : , 3].values
+dataset = pd.read_csv('Data.csv')//读取csv文件
+X = dataset.iloc[ : , :-1].values//.iloc[行，列]
+Y = dataset.iloc[ : , 3].values  // : 全部行 or 列；[a]第a行 or 列
+                                 // [a,b,c]第 a,b,c 行 or 列
 ```
 ## 第3步：处理丢失数据
 ```python
