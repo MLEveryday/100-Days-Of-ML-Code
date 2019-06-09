@@ -31,4 +31,4 @@ y_pred = regressor.predict(X_test)
 
 # regression evaluation
 from sklearn.metrics import r2_score
-print(r2_score(Y_test,y_pred))
+print(r2_score(Y_test, y_pred))
