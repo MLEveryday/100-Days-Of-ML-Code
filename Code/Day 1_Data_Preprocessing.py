@@ -15,6 +15,9 @@ print("Y")
 print(Y)
 
 #Step 3: Handling the missing data
+# If you use the newest version of sklearn, use the lines of code commented out
+# from sklearn.impute import SimpleImputer
+# imputer = SimpleImputer(missing_values="NaN", strategy="mean")
 from sklearn.preprocessing import Imputer
 imputer = Imputer(missing_values = "NaN", strategy = "mean", axis = 0)
 imputer = imputer.fit(X[ : , 1:3])
