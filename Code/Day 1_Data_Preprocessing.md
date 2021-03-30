@@ -28,6 +28,8 @@ imputer = imputer.fit(X[ : , 1:3])
 X[ : , 1:3] = imputer.transform(X[ : , 1:3])
 ```
 ## 第4步：解析分类数据
+scikit-learn 中 OneHotEncoder 解析：https://www.cnblogs.com/zhoukui/p/9159909.html
+scikit-learn 中 LabelEncoder 解析：https://www.cnblogs.com/sench/p/10134094.html
 ```python
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder
 labelencoder_X = LabelEncoder()
