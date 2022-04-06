@@ -15,6 +15,7 @@ import pandas as pd
 ```
 ## 第2步：导入数据集
 ```python
+//随后一列是label
 dataset = pd.read_csv('Data.csv')//读取csv文件
 X = dataset.iloc[ : , :-1].values//.iloc[行，列]
 Y = dataset.iloc[ : , 3].values  // : 全部行 or 列；[a]第a行 or 列
