@@ -8,6 +8,10 @@
 
 [Python 源文件](Day%2040.py) · [Notebook](Day%2040.ipynb) · [完整课程目录](../docs/curriculum.md)
 
+**先修导航**：[Day 45：NumPy：dtype、shape 与 ufunc](../docs/lessons/day-45.md)
+
+[选择学习路线](../docs/learning-paths.md) · [练习提示、参考答案与自检](../docs/solutions/day-40.md)
+
 ```python
 from pathlib import Path
 import sys
@@ -38,7 +42,7 @@ limit = 20 if os.environ.get("COURSE_SMOKE") == "1" else int(os.environ.get("COU
 if limit < 10:
     raise ValueError("COURSE_PET_LIMIT must be at least 10")
 manifest = prepare_pets(pet_root(), limit_per_class=limit)
-manifest_path = save_manifest(manifest)
+manifest_path = save_manifest(manifest, {"seed": 42, "limit_per_class": limit, "root": str(pet_root())})
 print("Split/class counts:", Counter((r["split"], r["label"]) for r in manifest["records"]))
 print("Bad/duplicate examples:", manifest["rejected"][:5])
 ```
@@ -53,7 +57,7 @@ print("Bad/duplicate examples:", manifest["rejected"][:5])
 
 ## 读取一个批次
 
-每次只解码所需图像；采用 RGB 三通道，缩放为 64×64×3，float32 范围 [0,1]。标签 0=Dog、1=Cat。清单保存到 outputs，可供 Day 41/42 使用；不要在训练后重新划分再比较结果。
+每次只解码所需图像；采用 RGB 三通道，缩放为 64×64×3，float32 范围 [0,1]。标签 0=Dog、1=Cat。每次保存创建新的 day40 实验目录；清单路径会打印，可通过 COURSE_PET_MANIFEST 传给 Day 41/42；不要在训练后重新划分再比较结果。
 
 ```python
 import matplotlib.pyplot as plt
@@ -64,7 +68,7 @@ fig, ax = plt.subplots()
 ax.imshow(batch_images[0].numpy())
 ax.set_title(manifest["class_names"][int(batch_labels[0])])
 ax.axis("off")
-finish_plot("day40_sample")
+finish_plot("day40_sample", manifest_path.parent)
 ```
 
 ## 练习与检查

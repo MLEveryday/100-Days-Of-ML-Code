@@ -8,6 +8,10 @@
 
 [Python 源文件](Day%2041.py) · [Notebook](Day%2041.ipynb) · [完整课程目录](../docs/curriculum.md)
 
+**先修导航**：[Day 39：MNIST 与 Keras 3](Day%2039.md)、[Day 40：猫狗数据准备与可复现划分](Day%2040.md)
+
+[选择学习路线](../docs/learning-paths.md) · [练习提示、参考答案与自检](../docs/solutions/day-41.md)
+
 ```python
 from pathlib import Path
 import sys
@@ -31,22 +35,30 @@ from course_utils import DATA, OUTPUT, finish_plot
 
 ```python
 import os
+import json
 import numpy as np
 import matplotlib.pyplot as plt
 import tensorflow as tf
 from deep_utils import configure, load_manifest, pet_dataset
 configure()
+from experiments import new_experiment, write_record
 manifest = load_manifest()
-train = pet_dataset(manifest, "train", training=True)
 valid = pet_dataset(manifest, "validation")
 test = pet_dataset(manifest, "test")
 ```
 
 ## 构建和训练
 
+本训练单元每次创建新实验目录并复制数据清单；配置、指标、曲线与模型放在一起。详见[实验保存](../docs/experiments.md)。
+
 卷积学习局部特征；池化降低空间分辨率；GlobalAveragePooling2D 避免 Flatten 后产生大量参数。隐藏 Dense 使用 ReLU，最终 sigmoid 输出 Cat 概率；binary crossentropy 与 0/1 浮点标签匹配。Conv2D 默认 valid 填充，空间形状依次为 64×64×3 → 62×62×16 → 31×31×16 → 29×29×32 → 32 → 16 → 1。下面完整列出结构，可以直接与 model.summary 的参数量对照。
 
 ```python
+configure()  # 单独重跑训练单元也重置种子和训练顺序
+train = pet_dataset(manifest, "train", training=True)
+epochs = 1 if os.environ.get("COURSE_SMOKE") == "1" else 5
+run_dir = new_experiment("day41", {"seed": 42, "epochs_max": epochs, "optimizer": "adam", "batch_size": 32, "image_size": [64, 64], "width": 16})
+write_record(run_dir / "manifest.json", manifest)
 model = tf.keras.Sequential([
     tf.keras.Input(shape=(64, 64, 3)),
     tf.keras.layers.Conv2D(16, 3, activation="relu"),
@@ -58,16 +70,19 @@ model = tf.keras.Sequential([
 ])
 model.compile(optimizer="adam", loss="binary_crossentropy", metrics=["accuracy"])
 model.summary()
-epochs = 1 if os.environ.get("COURSE_SMOKE") == "1" else 5
+write_record(run_dir / "architecture.json", json.loads(model.to_json()))
 history = model.fit(train, validation_data=valid, epochs=epochs, verbose=2,
                     callbacks=[tf.keras.callbacks.EarlyStopping(patience=2, restore_best_weights=True)])
-print("Held-out test:", model.evaluate(test, verbose=0, return_dict=True))
+test_metrics = model.evaluate(test, verbose=0, return_dict=True)
+print("Held-out test:", test_metrics)
+write_record(run_dir / "history.json", history.history)
+write_record(run_dir / "metrics.json", test_metrics)
 fig, ax = plt.subplots()
 ax.plot(history.history["loss"], label="train")
 ax.plot(history.history["val_loss"], label="validation")
 ax.set(xlabel="Epoch", ylabel="Binary cross-entropy")
 ax.legend()
-finish_plot("day41_loss")
+finish_plot("day41_loss", run_dir)
 ```
 
 ## 保存和复核
@@ -81,11 +96,16 @@ for images, labels in test:
     actual.extend(labels.numpy().astype(int))
     predicted.extend((model(images, training=False).numpy().ravel() >= 0.5).astype(int))
 print(classification_report(actual, predicted, target_names=["Dog", "Cat"], zero_division=0))
-model_path = OUTPUT / "day41_cnn.keras"
+write_record(run_dir / "classification.json", classification_report(
+    actual, predicted, target_names=["Dog", "Cat"], zero_division=0, output_dict=True))
+model_path = run_dir / "day41_cnn.keras"
+if model_path.exists():
+    raise FileExistsError("模型已保存；请重跑训练单元创建新实验，不覆盖旧模型。")
 model.save(model_path)
 restored = tf.keras.models.load_model(model_path)
 images, _ = next(iter(test))
 np.testing.assert_allclose(model(images, training=False).numpy(), restored(images, training=False).numpy(), rtol=1e-5, atol=1e-6)
+write_record(run_dir / "completed.json", {"saved_model": model_path.name, "reload_predictions_match": True})
 ```
 
 ## 练习与检查

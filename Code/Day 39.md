@@ -8,6 +8,10 @@
 
 [Python 源文件](Day%2039.py) · [Notebook](Day%2039.ipynb) · [完整课程目录](../docs/curriculum.md)
 
+**先修导航**：[Day 18：用 NumPy 实现两层神经网络](Day%2018_Numpy_Neural_Network.md)、[Day 36：梯度下降：batch、epoch 与学习率](../docs/lessons/day-36.md)、[Day 38：反向传播：梯度检查](../docs/lessons/day-38.md)
+
+[选择学习路线](../docs/learning-paths.md) · [练习提示、参考答案与自检](../docs/solutions/day-39.md)
+
 ```python
 from pathlib import Path
 import sys
@@ -31,12 +35,14 @@ MNIST 已放在 datasets/mnist.npz。图像 uint8 像素转换为 float32 并除
 
 ```python
 import os
+import json
 import numpy as np
 import matplotlib.pyplot as plt
 import tensorflow as tf
 from sklearn.model_selection import train_test_split
 from deep_utils import configure, array_dataset
 configure()
+from experiments import new_experiment, write_record
 with np.load(DATA / "mnist.npz", allow_pickle=False) as source:
     X, y = source["x_train"], source["y_train"]
     X_test, y_test = source["x_test"], source["y_test"]
@@ -45,7 +51,6 @@ if os.environ.get("COURSE_SMOKE") == "1":
 X = X.astype("float32") / 255.0
 X_test = X_test.astype("float32") / 255.0
 X_train, X_valid, y_train, y_valid = train_test_split(X, y, test_size=0.2, stratify=y, random_state=42)
-train = array_dataset(X_train, y_train, training=True)
 valid = array_dataset(X_valid, y_valid)
 test = array_dataset(X_test, y_test)
 print("Train/validation/test:", X_train.shape, X_valid.shape, X_test.shape)
@@ -53,9 +58,16 @@ print("Train/validation/test:", X_train.shape, X_valid.shape, X_test.shape)
 
 ## 构建网络并训练
 
+每次运行本训练单元都会创建独立实验目录，保存配置、训练历史和指标；保存模型单元使用同一目录。详见[实验保存](../docs/experiments.md)。
+
 Flatten 将 28×28 展开成 784 个特征；Dense(128) 使用 ReLU，10 类 softmax 输出总和为 1。验证集用于早停，测试集仅做最终评价。
 
 ```python
+import hashlib
+configure()  # 单独重跑训练单元也重置种子和训练顺序
+train = array_dataset(X_train, y_train, training=True)
+epochs = 1 if os.environ.get("COURSE_SMOKE") == "1" else 5
+run_dir = new_experiment("day39", {"seed": 42, "smoke": os.environ.get("COURSE_SMOKE") == "1", "epochs_max": epochs, "optimizer": "adam", "batch_size": 32, "train_size": len(X_train), "validation_size": len(X_valid), "test_size": len(X_test), "data_sha256": hashlib.sha256((DATA / "mnist.npz").read_bytes()).hexdigest()})
 model = tf.keras.Sequential([
     tf.keras.Input(shape=(28, 28)),
     tf.keras.layers.Flatten(),
@@ -64,16 +76,19 @@ model = tf.keras.Sequential([
 ])
 model.compile(optimizer="adam", loss="sparse_categorical_crossentropy", metrics=["accuracy"])
 model.summary()
-epochs = 1 if os.environ.get("COURSE_SMOKE") == "1" else 5
+write_record(run_dir / "architecture.json", json.loads(model.to_json()))
 history = model.fit(train, validation_data=valid, epochs=epochs, verbose=2,
                     callbacks=[tf.keras.callbacks.EarlyStopping(patience=2, restore_best_weights=True)])
-print("Held-out test:", model.evaluate(test, verbose=0, return_dict=True))
+test_metrics = model.evaluate(test, verbose=0, return_dict=True)
+print("Held-out test:", test_metrics)
+write_record(run_dir / "history.json", history.history)
+write_record(run_dir / "metrics.json", test_metrics)
 fig, ax = plt.subplots()
 ax.plot(history.history["loss"], label="train")
 ax.plot(history.history["val_loss"], label="validation")
 ax.set(xlabel="Epoch", ylabel="Cross-entropy")
 ax.legend()
-finish_plot("day39_loss")
+finish_plot("day39_loss", run_dir)
 ```
 
 ## 保存、加载和预测一致性
@@ -81,14 +96,16 @@ finish_plot("day39_loss")
 Keras 3 使用 `.keras` 保存可重新加载的完整模型。SavedModel 部署导出使用 `model.export`，不是这里的保存/加载流程。不同硬件可能出现浮点差异，用合理容差比较。
 
 ```python
-OUTPUT.mkdir(parents=True, exist_ok=True)
-model_path = OUTPUT / "day39_mnist.keras"
+model_path = run_dir / "day39_mnist.keras"
+if model_path.exists():
+    raise FileExistsError("模型已保存；请重跑训练单元创建新实验，不覆盖旧模型。")
 model.save(model_path)
 restored = tf.keras.models.load_model(model_path)
 before = model(X_test[:10], training=False).numpy()
 after = restored(X_test[:10], training=False).numpy()
 np.testing.assert_allclose(before, after, rtol=1e-5, atol=1e-6)
 print("Predicted digits:", after.argmax(axis=1), "actual:", y_test[:10])
+write_record(run_dir / "completed.json", {"saved_model": model_path.name, "reload_predictions_match": True})
 ```
 
 ## 练习与检查
