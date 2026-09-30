@@ -9,4 +9,4 @@ Pillow==12.3.0
 nbformat==5.10.4
 nbclient==0.10.0
 ipykernel==6.29.5
-notebook==7.2.2
+notebook==7.5.6
