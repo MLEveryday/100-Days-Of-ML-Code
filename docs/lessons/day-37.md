@@ -1,5 +1,11 @@
 # Day 37：反向传播：计算图与局部导数
 
+<!-- course-navigation:start -->
+**先修导航**：[Day 30：微积分：导数与链式法则](day-30.md)、[Day 35：神经网络：层、形状与激活](day-35.md)
+
+[选择学习路线](../learning-paths.md) · [练习提示、参考答案与自检](../solutions/day-37.md)
+<!-- course-navigation:end -->
+
 ## 学习目标
 
 区分算梯度和更新参数。

@@ -8,6 +8,10 @@
 
 [Python 源文件](Day%203_Multiple_Linear_Regression.py) · [Notebook](Day%203_Multiple_Linear_Regression.ipynb) · [完整课程目录](../docs/curriculum.md)
 
+**先修导航**：[Day 2：简单线性回归](Day%202_Simple_Linear_Regression.md)、[Day 26：线性代数：向量与线性变换](../docs/lessons/day-26.md)
+
+[选择学习路线](../docs/learning-paths.md) · [练习提示、参考答案与自检](../docs/solutions/day-03.md)
+
 ```python
 from pathlib import Path
 import sys

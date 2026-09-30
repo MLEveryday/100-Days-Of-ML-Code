@@ -1,5 +1,11 @@
 # Day 33：随机森林：抽样、特征与集成
 
+<!-- course-navigation:start -->
+**先修导航**：[Day 23：决策树：熵、分裂与 CART](day-23.md)
+
+[选择学习路线](../learning-paths.md) · [练习提示、参考答案与自检](../solutions/day-33.md)
+<!-- course-navigation:end -->
+
 ## 学习目标
 
 解释随机性为何有助于降低树间相关性。

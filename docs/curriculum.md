@@ -1,5 +1,7 @@
 # 完整课程目录
 
+[零基础／已有基础学习路线](learning-paths.md) · [实验保存与复现](experiments.md)
+
 Day 1～54 均有本地讲解与练习；实现课提供同步的 Python、Markdown 和 Notebook。Day 55～100 尚未编写，不代表已有 100 个完整实现。按顺序学习时可先运行基础课程，再安装深度学习依赖。
 
 [安装与运行](setup.md) · [外部阅读的兼容说明](readings.md) · [更新记录](modernization.md)

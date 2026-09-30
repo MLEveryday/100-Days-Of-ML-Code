@@ -1,5 +1,11 @@
 # Day 51：Matplotlib：线图、散点与误差条
 
+<!-- course-navigation:start -->
+**先修导航**：[Day 45：NumPy：dtype、shape 与 ufunc](day-45.md)
+
+[选择学习路线](../learning-paths.md) · [练习提示、参考答案与自检](../solutions/day-51.md)
+<!-- course-navigation:end -->
+
 ## 学习目标
 
 使用显式 fig/ax，正确表达轴和不确定性。

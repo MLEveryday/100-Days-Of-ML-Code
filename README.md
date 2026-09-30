@@ -1,5 +1,7 @@
 # 机器学习100天
 
+[零基础／已有基础学习路线](docs/learning-paths.md) · [实验保存与复现](docs/experiments.md)
+
 本项目基于 [Avik-Jain 的英文项目](https://github.com/Avik-Jain/100-Days-Of-ML-Code)，提供中文机器学习学习路线、讲解与练习。
 
 **当前覆盖 Day 1～54，Day 55～100 尚未编写。** 现有课程已更新数据预处理、模型评价、现代 scikit-learn 和 Keras 3 用法；理论日提供本地说明，图片与外部视频作为辅助资料。

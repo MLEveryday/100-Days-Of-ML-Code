@@ -41,6 +41,7 @@ def main():
         if args.deep:
             fixtures(temporary / "PetImages")
             env["COURSE_PET_IMAGES"] = str(temporary / "PetImages")
+            env.pop("COURSE_PET_MANIFEST", None)  # Do not inherit a user-selected real dataset.
         # A temporary kernelspec selects precisely the Python running this checker.
         kernel = temporary / "kernels" / "course-check"
         kernel.mkdir(parents=True)
@@ -64,6 +65,18 @@ def main():
                 except subprocess.TimeoutExpired:
                     ok = False
                     print("Timed out")
+                if ok and args.deep:
+                    day = int(re.search(r"Day (\d+)", path.name)[1])
+                    runs = list((Path(env["COURSE_OUTPUT_DIR"]) / "experiments" / f"day{day}").glob("*"))
+                    expected = {
+                        39: ["config.json", "history.json", "metrics.json", "day39_mnist.keras", "completed.json", "architecture.json"],
+                        40: ["config.json", "pets_manifest.json"],
+                        41: ["config.json", "manifest.json", "history.json", "metrics.json", "classification.json", "day41_cnn.keras", "completed.json", "architecture.json"],
+                        42: ["config.json", "manifest.json", "results.json", "width_8/best.keras", "width_16/best.keras"],
+                    }[day]
+                    if len(runs) != 1 or any(not (runs[0] / item).is_file() for item in expected):
+                        print(f"Missing or ambiguous experiment artifacts for Day {day}")
+                        ok = False
                 print(f"{'PASS' if ok else 'FAIL'} {mode}: {path.stem}", flush=True)
                 if not ok:
                     failures.append((mode, path.name))

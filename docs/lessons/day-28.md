@@ -1,5 +1,11 @@
 # Day 28：线性代数：点积与叉积
 
+<!-- course-navigation:start -->
+**先修导航**：[Day 26：线性代数：向量与线性变换](day-26.md)
+
+[选择学习路线](../learning-paths.md) · [练习提示、参考答案与自检](../solutions/day-28.md)
+<!-- course-navigation:end -->
+
 ## 学习目标
 
 用点积理解相似度和投影。

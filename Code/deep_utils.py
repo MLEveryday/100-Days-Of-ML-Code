@@ -5,7 +5,7 @@ import json
 import os
 import numpy as np
 import tensorflow as tf
-from course_utils import DATA, OUTPUT, repository_path
+from course_utils import DATA, repository_path
 
 SEED = 42
 
@@ -87,18 +87,19 @@ def prepare_pets(root, limit_per_class=None):
     return result
 
 
-def save_manifest(manifest):
-    OUTPUT.mkdir(parents=True, exist_ok=True)
-    path = OUTPUT / "pets_manifest.json"
-    path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
+def save_manifest(manifest, config=None):
+    from experiments import new_experiment, write_record
+    directory = new_experiment("day40", config or {"seed": SEED, "counts": manifest["counts"]})
+    path = directory / "pets_manifest.json"
+    write_record(path, manifest)
     print("Manifest:", path, "counts:", manifest["counts"], "rejected:", len(manifest["rejected"]))
     return path
 
 
 def load_manifest():
-    path = OUTPUT / "pets_manifest.json"
-    if not path.is_file():
-        raise FileNotFoundError(f"Missing {path}; run Day 40 first. See docs/setup.md.")
+    from experiments import selected_pet_manifest
+    path = selected_pet_manifest()
+    print("Using data split:", path)
     manifest = json.loads(path.read_text(encoding="utf-8"))
     validate_manifest(manifest)
     return manifest

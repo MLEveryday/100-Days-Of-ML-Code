@@ -1,5 +1,11 @@
 # Day 10：比较 KNN 与线性 SVM
 
+<!-- course-navigation:start -->
+**先修导航**：[Day 7：KNN：距离、邻居和投票](day-07.md)、[Day 9：SVM：线性分隔与支持向量](day-09.md)、[Day 20：正则化、验证与学习率](day-20.md)
+
+[选择学习路线](../learning-paths.md) · [练习提示、参考答案与自检](../solutions/day-10.md)
+<!-- course-navigation:end -->
+
 ## 学习目标
 
 在相同验证集上观察两种模型的归纳偏好。

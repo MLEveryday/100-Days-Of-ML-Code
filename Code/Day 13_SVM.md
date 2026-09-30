@@ -8,6 +8,10 @@
 
 [Python 源文件](Day%2013_SVM.py) · [Notebook](Day%2013_SVM.ipynb) · [完整课程目录](../docs/curriculum.md)
 
+**先修导航**：[Day 1：数据预处理](Day%201_Data_Preprocessing.md)、[Day 12：SVM：软间隔与核函数](../docs/lessons/day-12.md)、[Day 20：正则化、验证与学习率](../docs/lessons/day-20.md)
+
+[选择学习路线](../docs/learning-paths.md) · [练习提示、参考答案与自检](../docs/solutions/day-13.md)
+
 ```python
 from pathlib import Path
 import sys

@@ -1,5 +1,11 @@
 # Day 22：Hoeffding 不等式与样本量
 
+<!-- course-navigation:start -->
+**先修导航**：[Day 24：经验风险与泛化风险](day-24.md)
+
+[选择学习路线](../learning-paths.md) · [练习提示、参考答案与自检](../solutions/day-22.md)
+<!-- course-navigation:end -->
+
 ## 学习目标
 
 理解固定假设下偏差界的前提。

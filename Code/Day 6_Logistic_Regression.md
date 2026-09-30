@@ -8,6 +8,10 @@
 
 [Python 源文件](Day%206_Logistic_Regression.py) · [Notebook](Day%206_Logistic_Regression.ipynb) · [完整课程目录](../docs/curriculum.md)
 
+**先修导航**：[Day 1：数据预处理](Day%201_Data_Preprocessing.md)、[Day 4：逻辑回归：从得分到概率](../docs/lessons/day-04.md)、[Day 20：正则化、验证与学习率](../docs/lessons/day-20.md)
+
+[选择学习路线](../docs/learning-paths.md) · [练习提示、参考答案与自检](../docs/solutions/day-06.md)
+
 ```python
 from pathlib import Path
 import sys

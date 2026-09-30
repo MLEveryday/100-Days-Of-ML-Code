@@ -1,5 +1,11 @@
 # Day 29：线性代数：特征值与 PCA 预备
 
+<!-- course-navigation:start -->
+**先修导航**：[Day 27：线性代数：行列式、逆与子空间](day-27.md)、[Day 28：线性代数：点积与叉积](day-28.md)
+
+[选择学习路线](../learning-paths.md) · [练习提示、参考答案与自检](../solutions/day-29.md)
+<!-- course-navigation:end -->
+
 ## 学习目标
 
 理解方向保持及对称矩阵分解。

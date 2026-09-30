@@ -1,5 +1,11 @@
 # Day 23：决策树：熵、分裂与 CART
 
+<!-- course-navigation:start -->
+**先修导航**：无其他课程硬性先修；需能读写基本 Python 表达式。
+
+[选择学习路线](../learning-paths.md) · [练习提示、参考答案与自检](../solutions/day-23.md)
+<!-- course-navigation:end -->
+
 ## 学习目标
 
 用数值例子理解分类纯度，衔接 Day 25。

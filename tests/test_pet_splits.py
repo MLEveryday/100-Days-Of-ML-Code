@@ -89,6 +89,20 @@ class PetSplits(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, "changed"):
                 validate_manifest(manifest)
 
+    def test_saving_manifest_twice_keeps_both_snapshots(self):
+        from unittest.mock import patch
+        import experiments
+        from deep_utils import save_manifest
+        with tempfile.TemporaryDirectory() as directory, patch.object(experiments, "OUTPUT", Path(directory)):
+            original = {"counts": {"Dog": 10, "Cat": 10}, "rejected": [], "records": []}
+            first = save_manifest(original)
+            before = first.read_bytes()
+            changed = {**original, "counts": {"Dog": 20, "Cat": 20}}
+            second = save_manifest(changed)
+            self.assertNotEqual(first, second)
+            self.assertEqual(first.read_bytes(), before)
+            self.assertNotEqual(first.read_bytes(), second.read_bytes())
+
     def test_missing_classes_fail_clearly(self):
         from deep_utils import prepare_pets
         with tempfile.TemporaryDirectory() as directory:

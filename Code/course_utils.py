@@ -17,10 +17,11 @@ def repository_path(value):
 OUTPUT = repository_path(os.environ.get("COURSE_OUTPUT_DIR", "outputs"))
 
 
-def finish_plot(name):
+def finish_plot(name, directory=None):
     """Save every figure; set COURSE_SHOW_PLOTS=1 for an interactive window."""
-    OUTPUT.mkdir(parents=True, exist_ok=True)
-    path = OUTPUT / f"{name}.png"
+    directory = OUTPUT if directory is None else Path(directory)
+    directory.mkdir(parents=True, exist_ok=True)
+    path = directory / f"{name}.png"
     plt.savefig(path, dpi=120, bbox_inches="tight")
     print(f"Figure: {path}")
     if os.environ.get("COURSE_SHOW_PLOTS") == "1":

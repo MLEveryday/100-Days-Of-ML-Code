@@ -8,6 +8,10 @@
 
 [Python 源文件](Day%2018_Numpy_Neural_Network.py) · [Notebook](Day%2018_Numpy_Neural_Network.ipynb) · [完整课程目录](../docs/curriculum.md)
 
+**先修导航**：[Day 17：从逻辑回归到神经元](../docs/lessons/day-17.md)、[Day 30：微积分：导数与链式法则](../docs/lessons/day-30.md)、[Day 37：反向传播：计算图与局部导数](../docs/lessons/day-37.md)、[Day 38：反向传播：梯度检查](../docs/lessons/day-38.md)、[Day 20：正则化、验证与学习率](../docs/lessons/day-20.md)
+
+[选择学习路线](../docs/learning-paths.md) · [练习提示、参考答案与自检](../docs/solutions/day-18.md)
+
 ```python
 from pathlib import Path
 import sys

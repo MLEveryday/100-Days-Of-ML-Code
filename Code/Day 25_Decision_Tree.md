@@ -8,6 +8,10 @@
 
 [Python 源文件](Day%2025_Decision_Tree.py) · [Notebook](Day%2025_Decision_Tree.ipynb) · [完整课程目录](../docs/curriculum.md)
 
+**先修导航**：[Day 1：数据预处理](Day%201_Data_Preprocessing.md)、[Day 23：决策树：熵、分裂与 CART](../docs/lessons/day-23.md)、[Day 20：正则化、验证与学习率](../docs/lessons/day-20.md)
+
+[选择学习路线](../docs/learning-paths.md) · [练习提示、参考答案与自检](../docs/solutions/day-25.md)
+
 ```python
 from pathlib import Path
 import sys

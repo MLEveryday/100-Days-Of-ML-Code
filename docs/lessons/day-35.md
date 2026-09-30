@@ -1,5 +1,11 @@
 # Day 35：神经网络：层、形状与激活
 
+<!-- course-navigation:start -->
+**先修导航**：[Day 17：从逻辑回归到神经元](day-17.md)
+
+[选择学习路线](../learning-paths.md) · [练习提示、参考答案与自检](../solutions/day-35.md)
+<!-- course-navigation:end -->
+
 ## 学习目标
 
 把单个神经元扩展为多层网络。

@@ -1,5 +1,11 @@
 # Day 30：微积分：导数与链式法则
 
+<!-- course-navigation:start -->
+**先修导航**：无其他课程硬性先修；需能读写基本 Python 表达式。
+
+[选择学习路线](../learning-paths.md) · [练习提示、参考答案与自检](../solutions/day-30.md)
+<!-- course-navigation:end -->
+
 ## 学习目标
 
 把局部变化率联系到损失优化。

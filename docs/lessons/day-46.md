@@ -1,5 +1,11 @@
 # Day 46：NumPy：广播、聚合与布尔掩码
 
+<!-- course-navigation:start -->
+**先修导航**：[Day 45：NumPy：dtype、shape 与 ufunc](day-45.md)
+
+[选择学习路线](../learning-paths.md) · [练习提示、参考答案与自检](../solutions/day-46.md)
+<!-- course-navigation:end -->
+
 ## 学习目标
 
 理解维度对齐和条件筛选。

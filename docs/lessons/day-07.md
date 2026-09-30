@@ -1,5 +1,11 @@
 # Day 7：KNN：距离、邻居和投票
 
+<!-- course-navigation:start -->
+**先修导航**：[Day 28：线性代数：点积与叉积](day-28.md)
+
+[选择学习路线](../learning-paths.md) · [练习提示、参考答案与自检](../solutions/day-07.md)
+<!-- course-navigation:end -->
+
 ## 学习目标
 
 理解惰性学习以及 K 的作用；前置：欧氏距离。

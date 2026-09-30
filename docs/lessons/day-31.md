@@ -1,5 +1,11 @@
 # Day 31：微积分：极限与隐函数
 
+<!-- course-navigation:start -->
+**先修导航**：[Day 30：微积分：导数与链式法则](day-30.md)
+
+[选择学习路线](../learning-paths.md) · [练习提示、参考答案与自检](../solutions/day-31.md)
+<!-- course-navigation:end -->
+
 ## 学习目标
 
 理解局部近似的适用范围。

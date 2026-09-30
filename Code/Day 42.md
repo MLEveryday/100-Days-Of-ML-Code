@@ -8,6 +8,10 @@
 
 [Python 源文件](Day%2042.py) · [Notebook](Day%2042.ipynb) · [完整课程目录](../docs/curriculum.md)
 
+**先修导航**：[Day 41：小型卷积神经网络](Day%2041.md)、[Day 20：正则化、验证与学习率](../docs/lessons/day-20.md)
+
+[选择学习路线](../docs/learning-paths.md) · [练习提示、参考答案与自检](../docs/solutions/day-42.md)
+
 ```python
 from pathlib import Path
 import sys
@@ -27,20 +31,16 @@ from course_utils import DATA, OUTPUT, finish_plot
 
 ## 准备独立实验目录
 
-使用 UTC 时间和唯一后缀避免日志混合，保存清单副本及参数。运行后在仓库根目录执行 `tensorboard --logdir outputs/tensorboard`，浏览器打开 http://localhost:6006。
+使用 UTC 时间和唯一后缀避免日志混合，保存清单副本及参数。运行后在仓库根目录执行 `tensorboard --logdir outputs/experiments/day42`，浏览器打开 http://localhost:6006。
 
 ```python
 import os
 import json
-from datetime import datetime, timezone
-from uuid import uuid4
 import tensorflow as tf
 from deep_utils import configure, load_manifest, pet_dataset
 configure()
+from experiments import new_experiment, write_record
 manifest = load_manifest()
-run_root = OUTPUT / "tensorboard" / (datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ") + "_" + uuid4().hex[:8])
-run_root.mkdir(parents=True)
-(run_root / "manifest.json").write_text(json.dumps(manifest, indent=2), encoding="utf-8")
 epochs = 1 if os.environ.get("COURSE_SMOKE") == "1" else 5
 results = []
 ```
@@ -62,22 +62,26 @@ def build_model(width):
     ])
 
 
-results = []  # 重跑本单元时清空上次比较结果
+run_root = new_experiment("day42", {"seed": 42, "widths": [8, 16], "epochs_max": epochs, "optimizer": "adam", "batch_size": 32, "image_size": [64, 64]})
+write_record(run_root / "manifest.json", manifest)
+results = []  # 重跑训练单元创建新目录，保留上一次所有结果
 for width in [8, 16]:
     tf.keras.backend.clear_session()
     tf.keras.utils.set_random_seed(42)
     model = build_model(width)
     model.compile(optimizer="adam", loss="binary_crossentropy", metrics=["accuracy"])
     directory = run_root / f"width_{width}"
-    directory.mkdir(exist_ok=True)
+    directory.mkdir()
     config = {"width": width, "epochs_max": epochs, "seed": 42, "optimizer": "adam",
               "parameters": model.count_params(), "tensorflow": tf.__version__, "keras": tf.keras.__version__}
-    (directory / "config.json").write_text(json.dumps(config, indent=2), encoding="utf-8")
-    model.fit(pet_dataset(manifest, "train", training=True),
+    write_record(directory / "config.json", config)
+    write_record(directory / "architecture.json", json.loads(model.to_json()))
+    history = model.fit(pet_dataset(manifest, "train", training=True),
               validation_data=pet_dataset(manifest, "validation"), epochs=epochs, verbose=2,
               callbacks=[tf.keras.callbacks.TensorBoard(log_dir=str(directory / "logs")),
                          tf.keras.callbacks.EarlyStopping(patience=2, restore_best_weights=True),
                          tf.keras.callbacks.ModelCheckpoint(directory / "best.keras", save_best_only=True)])
+    write_record(directory / "history.json", history.history)
     # 用实际保存的检查点评估，确保选模指标与后面加载的模型完全对应。
     restored = tf.keras.models.load_model(directory / "best.keras")
     validation = restored.evaluate(pet_dataset(manifest, "validation"), verbose=0, return_dict=True)
@@ -94,7 +98,7 @@ best = min(results, key=lambda result: result["validation"]["loss"])
 selected = tf.keras.models.load_model(best["path"])
 test_metrics = selected.evaluate(pet_dataset(manifest, "test"), verbose=0, return_dict=True)
 report = {"experiments": results, "selected_width": best["width"], "test": test_metrics}
-(run_root / "results.json").write_text(json.dumps(report, indent=2), encoding="utf-8")
+write_record(run_root / "results.json", report)
 print(report)
 print("TensorBoard logs:", run_root)
 ```

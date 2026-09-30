@@ -1,5 +1,11 @@
 # Day 8：逻辑回归：对数几率与正则化
 
+<!-- course-navigation:start -->
+**先修导航**：[Day 4：逻辑回归：从得分到概率](day-04.md)、[Day 5：逻辑回归：交叉熵与梯度](day-05.md)
+
+[选择学习路线](../learning-paths.md) · [练习提示、参考答案与自检](../solutions/day-08.md)
+<!-- course-navigation:end -->
+
 ## 学习目标
 
 补充概率模型解释，与 Day 5 的优化步骤衔接。
