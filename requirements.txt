@@ -5,7 +5,7 @@ scipy==1.13.1
 scikit-learn==1.5.1
 matplotlib==3.9.2
 beautifulsoup4==4.12.3
-Pillow==10.4.0
+Pillow==12.3.0
 nbformat==5.10.4
 nbclient==0.10.0
 ipykernel==6.29.5
