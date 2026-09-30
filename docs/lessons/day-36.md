@@ -1,5 +1,11 @@
 # Day 36：梯度下降：batch、epoch 与学习率
 
+<!-- course-navigation:start -->
+**先修导航**：[Day 5：逻辑回归：交叉熵与梯度](day-05.md)
+
+[选择学习路线](../learning-paths.md) · [练习提示、参考答案与自检](../solutions/day-36.md)
+<!-- course-navigation:end -->
+
 ## 学习目标
 
 理解训练循环中的计量单位。

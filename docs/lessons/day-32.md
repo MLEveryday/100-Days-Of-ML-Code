@@ -1,5 +1,11 @@
 # Day 32：微积分：Taylor 近似与曲率
 
+<!-- course-navigation:start -->
+**先修导航**：[Day 30：微积分：导数与链式法则](day-30.md)
+
+[选择学习路线](../learning-paths.md) · [练习提示、参考答案与自检](../solutions/day-32.md)
+<!-- course-navigation:end -->
+
 ## 学习目标
 
 把一阶、二阶信息联系到优化。

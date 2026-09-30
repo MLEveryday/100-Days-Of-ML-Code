@@ -31,6 +31,18 @@ def main():
             if result.returncode:
                 errors.append(f"{path}: {result.stderr}")
         print(f"Checked theory Day {path.stem[-2:]}", flush=True)
+    solution_blocks = 0
+    # Worked solutions contain optional standalone numerical checks.
+    for path in sorted((ROOT / "docs/solutions").glob("day-*.md")):
+        for example in re.findall(r"```python\n(.*?)```", path.read_text(encoding="utf-8"), re.S):
+            solution_blocks += 1
+            ast.parse(example)
+            with tempfile.TemporaryDirectory(prefix="ml-solution-") as directory:
+                result = subprocess.run([sys.executable, "-c", example], cwd=directory,
+                                        capture_output=True, text=True, timeout=30,
+                                        env={**os.environ, "OPENBLAS_NUM_THREADS": "1"})
+            if result.returncode:
+                errors.append(f"{path}: {result.stderr}")
     paths = [ROOT / "README.md", ROOT / "FAQ.MD", ROOT / "datasets/readme.md"]
     paths += list((ROOT / "Code").glob("Day*.md")) + list((ROOT / "docs").rglob("*.md"))
     historical = {"day-by-day-review.md", "original-roadmap.md"}
@@ -45,7 +57,7 @@ def main():
                 errors.append(f"Broken local link in {path.relative_to(ROOT)}: {target}")
     if errors:
         raise SystemExit("\n".join(errors))
-    print(f"Passed {len(lessons)} theory examples and active local links.")
+    print(f"Passed {len(lessons)} theory lessons, {solution_blocks} solution code blocks and active local links.")
 
 
 if __name__ == "__main__":

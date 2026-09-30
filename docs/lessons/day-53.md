@@ -1,5 +1,11 @@
 # Day 53：Matplotlib：三维视图与二维对照
 
+<!-- course-navigation:start -->
+**先修导航**：[Day 51：Matplotlib：线图、散点与误差条](day-51.md)、[Day 26：线性代数：向量与线性变换](day-26.md)
+
+[选择学习路线](../learning-paths.md) · [练习提示、参考答案与自检](../solutions/day-53.md)
+<!-- course-navigation:end -->
+
 ## 学习目标
 
 理解投影遮挡和视角影响。

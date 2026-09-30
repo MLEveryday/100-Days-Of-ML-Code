@@ -1,5 +1,11 @@
 # Day 20：正则化、验证与学习率
 
+<!-- course-navigation:start -->
+**先修导航**：[Day 1：数据预处理](../../Code/Day%201_Data_Preprocessing.md)
+
+[选择学习路线](../learning-paths.md) · [练习提示、参考答案与自检](../solutions/day-20.md)
+<!-- course-navigation:end -->
+
 ## 学习目标
 
 设计不依赖测试集调参的实验。

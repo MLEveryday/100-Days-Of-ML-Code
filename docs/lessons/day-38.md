@@ -1,5 +1,11 @@
 # Day 38：反向传播：梯度检查
 
+<!-- course-navigation:start -->
+**先修导航**：[Day 37：反向传播：计算图与局部导数](day-37.md)
+
+[选择学习路线](../learning-paths.md) · [练习提示、参考答案与自检](../solutions/day-38.md)
+<!-- course-navigation:end -->
+
 ## 学习目标
 
 用数值差分验证解析梯度。

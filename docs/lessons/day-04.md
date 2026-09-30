@@ -1,5 +1,11 @@
 # Day 4：逻辑回归：从得分到概率
 
+<!-- course-navigation:start -->
+**先修导航**：无其他课程硬性先修；需能读写基本 Python 表达式。
+
+[选择学习路线](../learning-paths.md) · [练习提示、参考答案与自检](../solutions/day-04.md)
+<!-- course-navigation:end -->
+
 ## 学习目标
 
 区分线性得分、概率和类别；前置：函数与指数。

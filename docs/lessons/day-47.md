@@ -1,5 +1,11 @@
 # Day 47：NumPy：索引、排序与结构化数据
 
+<!-- course-navigation:start -->
+**先修导航**：[Day 45：NumPy：dtype、shape 与 ufunc](day-45.md)
+
+[选择学习路线](../learning-paths.md) · [练习提示、参考答案与自检](../solutions/day-47.md)
+<!-- course-navigation:end -->
+
 ## 学习目标
 
 区分视图与副本，避免意外改写。

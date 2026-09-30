@@ -1,5 +1,11 @@
 # Day 52：Matplotlib：分布、色条和子图
 
+<!-- course-navigation:start -->
+**先修导航**：[Day 51：Matplotlib：线图、散点与误差条](day-51.md)
+
+[选择学习路线](../learning-paths.md) · [练习提示、参考答案与自检](../solutions/day-52.md)
+<!-- course-navigation:end -->
+
 ## 学习目标
 
 选择合适的视觉编码并避免误读。

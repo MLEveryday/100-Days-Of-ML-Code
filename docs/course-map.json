@@ -1,0 +1,456 @@
+[
+  {
+    "day": 1,
+    "title": "数据预处理",
+    "path": "Code/Day 1_Data_Preprocessing.md",
+    "prerequisites": [
+      45,
+      48
+    ]
+  },
+  {
+    "day": 2,
+    "title": "简单线性回归",
+    "path": "Code/Day 2_Simple_Linear_Regression.md",
+    "prerequisites": [
+      1,
+      51
+    ]
+  },
+  {
+    "day": 3,
+    "title": "多元线性回归",
+    "path": "Code/Day 3_Multiple_Linear_Regression.md",
+    "prerequisites": [
+      2,
+      26
+    ]
+  },
+  {
+    "day": 4,
+    "title": "逻辑回归：从得分到概率",
+    "path": "docs/lessons/day-04.md",
+    "prerequisites": []
+  },
+  {
+    "day": 5,
+    "title": "逻辑回归：交叉熵与梯度",
+    "path": "docs/lessons/day-05.md",
+    "prerequisites": [
+      4,
+      30
+    ]
+  },
+  {
+    "day": 6,
+    "title": "逻辑回归",
+    "path": "Code/Day 6_Logistic_Regression.md",
+    "prerequisites": [
+      1,
+      4,
+      20
+    ]
+  },
+  {
+    "day": 7,
+    "title": "KNN：距离、邻居和投票",
+    "path": "docs/lessons/day-07.md",
+    "prerequisites": [
+      28
+    ]
+  },
+  {
+    "day": 8,
+    "title": "逻辑回归：对数几率与正则化",
+    "path": "docs/lessons/day-08.md",
+    "prerequisites": [
+      4,
+      5
+    ]
+  },
+  {
+    "day": 9,
+    "title": "SVM：线性分隔与支持向量",
+    "path": "docs/lessons/day-09.md",
+    "prerequisites": [
+      26,
+      28
+    ]
+  },
+  {
+    "day": 10,
+    "title": "比较 KNN 与线性 SVM",
+    "path": "docs/lessons/day-10.md",
+    "prerequisites": [
+      7,
+      9,
+      20
+    ]
+  },
+  {
+    "day": 11,
+    "title": "K 近邻分类",
+    "path": "Code/Day 11_K-NN.md",
+    "prerequisites": [
+      1,
+      7,
+      20
+    ]
+  },
+  {
+    "day": 12,
+    "title": "SVM：软间隔与核函数",
+    "path": "docs/lessons/day-12.md",
+    "prerequisites": [
+      9
+    ]
+  },
+  {
+    "day": 13,
+    "title": "线性支持向量机",
+    "path": "Code/Day 13_SVM.md",
+    "prerequisites": [
+      1,
+      12,
+      20
+    ]
+  },
+  {
+    "day": 14,
+    "title": "观察 SVM 间隔与 C",
+    "path": "Code/Day 14_SVM_Margin.md",
+    "prerequisites": [
+      13
+    ]
+  },
+  {
+    "day": 15,
+    "title": "朴素贝叶斯与基线比较",
+    "path": "Code/Day 15_Naive_Bayes.md",
+    "prerequisites": [
+      1
+    ]
+  },
+  {
+    "day": 16,
+    "title": "非线性核 SVM",
+    "path": "Code/Day 16_Kernel_SVM.md",
+    "prerequisites": [
+      13,
+      20
+    ]
+  },
+  {
+    "day": 17,
+    "title": "从逻辑回归到神经元",
+    "path": "docs/lessons/day-17.md",
+    "prerequisites": [
+      4,
+      26
+    ]
+  },
+  {
+    "day": 18,
+    "title": "用 NumPy 实现两层神经网络",
+    "path": "Code/Day 18_Numpy_Neural_Network.md",
+    "prerequisites": [
+      17,
+      30,
+      37,
+      38,
+      20
+    ]
+  },
+  {
+    "day": 19,
+    "title": "感知机与学习问题",
+    "path": "docs/lessons/day-19.md",
+    "prerequisites": [
+      9
+    ]
+  },
+  {
+    "day": 20,
+    "title": "正则化、验证与学习率",
+    "path": "docs/lessons/day-20.md",
+    "prerequisites": [
+      1
+    ]
+  },
+  {
+    "day": 21,
+    "title": "从 HTML 提取结构化数据",
+    "path": "Code/Day 21_HTML_Data_Collection.md",
+    "prerequisites": [
+      48
+    ]
+  },
+  {
+    "day": 22,
+    "title": "Hoeffding 不等式与样本量",
+    "path": "docs/lessons/day-22.md",
+    "prerequisites": [
+      24
+    ]
+  },
+  {
+    "day": 23,
+    "title": "决策树：熵、分裂与 CART",
+    "path": "docs/lessons/day-23.md",
+    "prerequisites": []
+  },
+  {
+    "day": 24,
+    "title": "经验风险与泛化风险",
+    "path": "docs/lessons/day-24.md",
+    "prerequisites": []
+  },
+  {
+    "day": 25,
+    "title": "决策树分类",
+    "path": "Code/Day 25_Decision_Tree.md",
+    "prerequisites": [
+      1,
+      23,
+      20
+    ]
+  },
+  {
+    "day": 26,
+    "title": "线性代数：向量与线性变换",
+    "path": "docs/lessons/day-26.md",
+    "prerequisites": [
+      45
+    ]
+  },
+  {
+    "day": 27,
+    "title": "线性代数：行列式、逆与子空间",
+    "path": "docs/lessons/day-27.md",
+    "prerequisites": [
+      26
+    ]
+  },
+  {
+    "day": 28,
+    "title": "线性代数：点积与叉积",
+    "path": "docs/lessons/day-28.md",
+    "prerequisites": [
+      26
+    ]
+  },
+  {
+    "day": 29,
+    "title": "线性代数：特征值与 PCA 预备",
+    "path": "docs/lessons/day-29.md",
+    "prerequisites": [
+      27,
+      28
+    ]
+  },
+  {
+    "day": 30,
+    "title": "微积分：导数与链式法则",
+    "path": "docs/lessons/day-30.md",
+    "prerequisites": []
+  },
+  {
+    "day": 31,
+    "title": "微积分：极限与隐函数",
+    "path": "docs/lessons/day-31.md",
+    "prerequisites": [
+      30
+    ]
+  },
+  {
+    "day": 32,
+    "title": "微积分：Taylor 近似与曲率",
+    "path": "docs/lessons/day-32.md",
+    "prerequisites": [
+      30
+    ]
+  },
+  {
+    "day": 33,
+    "title": "随机森林：抽样、特征与集成",
+    "path": "docs/lessons/day-33.md",
+    "prerequisites": [
+      23
+    ]
+  },
+  {
+    "day": 34,
+    "title": "随机森林",
+    "path": "Code/Day 34_Random_Forests.md",
+    "prerequisites": [
+      25,
+      33
+    ]
+  },
+  {
+    "day": 35,
+    "title": "神经网络：层、形状与激活",
+    "path": "docs/lessons/day-35.md",
+    "prerequisites": [
+      17
+    ]
+  },
+  {
+    "day": 36,
+    "title": "梯度下降：batch、epoch 与学习率",
+    "path": "docs/lessons/day-36.md",
+    "prerequisites": [
+      5
+    ]
+  },
+  {
+    "day": 37,
+    "title": "反向传播：计算图与局部导数",
+    "path": "docs/lessons/day-37.md",
+    "prerequisites": [
+      30,
+      35
+    ]
+  },
+  {
+    "day": 38,
+    "title": "反向传播：梯度检查",
+    "path": "docs/lessons/day-38.md",
+    "prerequisites": [
+      37
+    ]
+  },
+  {
+    "day": 39,
+    "title": "MNIST 与 Keras 3",
+    "path": "Code/Day 39.md",
+    "prerequisites": [
+      18,
+      36,
+      38
+    ]
+  },
+  {
+    "day": 40,
+    "title": "猫狗数据准备与可复现划分",
+    "path": "Code/Day 40.md",
+    "prerequisites": [
+      45
+    ]
+  },
+  {
+    "day": 41,
+    "title": "小型卷积神经网络",
+    "path": "Code/Day 41.md",
+    "prerequisites": [
+      39,
+      40
+    ]
+  },
+  {
+    "day": 42,
+    "title": "TensorBoard 与受控实验",
+    "path": "Code/Day 42.md",
+    "prerequisites": [
+      41,
+      20
+    ]
+  },
+  {
+    "day": 43,
+    "title": "K-means：目标、初始化与局限",
+    "path": "docs/lessons/day-43.md",
+    "prerequisites": [
+      28
+    ]
+  },
+  {
+    "day": 44,
+    "title": "K-means 聚类实现",
+    "path": "Code/Day 44_KMeans.md",
+    "prerequisites": [
+      1,
+      43
+    ]
+  },
+  {
+    "day": 45,
+    "title": "NumPy：dtype、shape 与 ufunc",
+    "path": "docs/lessons/day-45.md",
+    "prerequisites": []
+  },
+  {
+    "day": 46,
+    "title": "NumPy：广播、聚合与布尔掩码",
+    "path": "docs/lessons/day-46.md",
+    "prerequisites": [
+      45
+    ]
+  },
+  {
+    "day": 47,
+    "title": "NumPy：索引、排序与结构化数据",
+    "path": "docs/lessons/day-47.md",
+    "prerequisites": [
+      45
+    ]
+  },
+  {
+    "day": 48,
+    "title": "pandas：索引、缺失值与 concat",
+    "path": "docs/lessons/day-48.md",
+    "prerequisites": [
+      45
+    ]
+  },
+  {
+    "day": 49,
+    "title": "pandas：连接、分组与透视表",
+    "path": "docs/lessons/day-49.md",
+    "prerequisites": [
+      48
+    ]
+  },
+  {
+    "day": 50,
+    "title": "pandas：字符串、时间与无泄漏特征",
+    "path": "docs/lessons/day-50.md",
+    "prerequisites": [
+      48
+    ]
+  },
+  {
+    "day": 51,
+    "title": "Matplotlib：线图、散点与误差条",
+    "path": "docs/lessons/day-51.md",
+    "prerequisites": [
+      45
+    ]
+  },
+  {
+    "day": 52,
+    "title": "Matplotlib：分布、色条和子图",
+    "path": "docs/lessons/day-52.md",
+    "prerequisites": [
+      51
+    ]
+  },
+  {
+    "day": 53,
+    "title": "Matplotlib：三维视图与二维对照",
+    "path": "docs/lessons/day-53.md",
+    "prerequisites": [
+      51,
+      26
+    ]
+  },
+  {
+    "day": 54,
+    "title": "层次聚类",
+    "path": "Code/Day 54_Hierarchical_Clustering.md",
+    "prerequisites": [
+      1,
+      43
+    ]
+  }
+]

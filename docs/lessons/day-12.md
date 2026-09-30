@@ -1,5 +1,11 @@
 # Day 12：SVM：软间隔与核函数
 
+<!-- course-navigation:start -->
+**先修导航**：[Day 9：SVM：线性分隔与支持向量](day-09.md)
+
+[选择学习路线](../learning-paths.md) · [练习提示、参考答案与自检](../solutions/day-12.md)
+<!-- course-navigation:end -->
+
 ## 学习目标
 
 解释 C、gamma 和核方法，准备 Day 13/16。

@@ -8,6 +8,10 @@
 
 [Python 源文件](Day%2015_Naive_Bayes.py) · [Notebook](Day%2015_Naive_Bayes.ipynb) · [完整课程目录](../docs/curriculum.md)
 
+**先修导航**：[Day 1：数据预处理](Day%201_Data_Preprocessing.md)
+
+[选择学习路线](../docs/learning-paths.md) · [练习提示、参考答案与自检](../docs/solutions/day-15.md)
+
 ```python
 from pathlib import Path
 import sys

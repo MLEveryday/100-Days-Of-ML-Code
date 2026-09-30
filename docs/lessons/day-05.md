@@ -1,5 +1,11 @@
 # Day 5：逻辑回归：交叉熵与梯度
 
+<!-- course-navigation:start -->
+**先修导航**：[Day 4：逻辑回归：从得分到概率](day-04.md)、[Day 30：微积分：导数与链式法则](day-30.md)
+
+[选择学习路线](../learning-paths.md) · [练习提示、参考答案与自检](../solutions/day-05.md)
+<!-- course-navigation:end -->
+
 ## 学习目标
 
 推导二分类损失及一个更新步骤；前置：Day 4、导数。

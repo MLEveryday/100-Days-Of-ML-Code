@@ -1,5 +1,11 @@
 # Day 49：pandas：连接、分组与透视表
 
+<!-- course-navigation:start -->
+**先修导航**：[Day 48：pandas：索引、缺失值与 concat](day-48.md)
+
+[选择学习路线](../learning-paths.md) · [练习提示、参考答案与自检](../solutions/day-49.md)
+<!-- course-navigation:end -->
+
 ## 学习目标
 
 避免连接膨胀并解释分组统计。

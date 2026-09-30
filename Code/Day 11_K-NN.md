@@ -8,6 +8,10 @@
 
 [Python 源文件](Day%2011_k-NN.py) · [Notebook](Day%2011_K-NN.ipynb) · [完整课程目录](../docs/curriculum.md)
 
+**先修导航**：[Day 1：数据预处理](Day%201_Data_Preprocessing.md)、[Day 7：KNN：距离、邻居和投票](../docs/lessons/day-07.md)、[Day 20：正则化、验证与学习率](../docs/lessons/day-20.md)
+
+[选择学习路线](../docs/learning-paths.md) · [练习提示、参考答案与自检](../docs/solutions/day-11.md)
+
 ```python
 from pathlib import Path
 import sys

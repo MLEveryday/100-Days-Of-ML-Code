@@ -1,5 +1,11 @@
 # Day 50：pandas：字符串、时间与无泄漏特征
 
+<!-- course-navigation:start -->
+**先修导航**：[Day 48：pandas：索引、缺失值与 concat](day-48.md)
+
+[选择学习路线](../learning-paths.md) · [练习提示、参考答案与自检](../solutions/day-50.md)
+<!-- course-navigation:end -->
+
 ## 学习目标
 
 理解时间索引和只使用过去信息的特征。

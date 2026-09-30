@@ -1,5 +1,11 @@
 # Day 43：K-means：目标、初始化与局限
 
+<!-- course-navigation:start -->
+**先修导航**：[Day 28：线性代数：点积与叉积](day-28.md)
+
+[选择学习路线](../learning-paths.md) · [练习提示、参考答案与自检](../solutions/day-43.md)
+<!-- course-navigation:end -->
+
 ## 学习目标
 
 理解簇中心和局部最优。

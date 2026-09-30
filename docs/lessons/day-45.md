@@ -1,5 +1,11 @@
 # Day 45：NumPy：dtype、shape 与 ufunc
 
+<!-- course-navigation:start -->
+**先修导航**：无其他课程硬性先修；需能读写基本 Python 表达式。
+
+[选择学习路线](../learning-paths.md) · [练习提示、参考答案与自检](../solutions/day-45.md)
+<!-- course-navigation:end -->
+
 ## 学习目标
 
 建立数组与向量化的基础。

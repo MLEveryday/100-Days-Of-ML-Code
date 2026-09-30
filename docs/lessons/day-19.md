@@ -1,5 +1,11 @@
 # Day 19：感知机与学习问题
 
+<!-- course-navigation:start -->
+**先修导航**：[Day 9：SVM：线性分隔与支持向量](day-09.md)
+
+[选择学习路线](../learning-paths.md) · [练习提示、参考答案与自检](../solutions/day-19.md)
+<!-- course-navigation:end -->
+
 ## 学习目标
 
 理解在线更新、线性可分假设和局限。
