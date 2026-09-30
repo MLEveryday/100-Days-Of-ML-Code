@@ -49,7 +49,7 @@ python "Code/Day 39.py"
 python "Code/Day 40.py"
 python "Code/Day 41.py"
 python "Code/Day 42.py"
-tensorboard --logdir outputs/tensorboard
+tensorboard --logdir outputs/experiments/day42
 ```
 
 浏览器打开 `http://localhost:6006`。远程服务器须使用你自己的端口转发方式，本教程不自动开放服务端口。
@@ -60,11 +60,12 @@ tensorboard --logdir outputs/tensorboard
 |---|---|
 | `COURSE_OUTPUT_DIR` | 输出目录，默认仓库的 `outputs/`；相对路径相对于仓库根目录；40～42 必须一致 |
 | `COURSE_PET_IMAGES` | 包含 `Dog/`、`Cat/` 的目录，默认 `datasets/PetImages`；相对路径相对于仓库根目录 |
+| `COURSE_PET_MANIFEST` | 指定 Day 40 清单；存在多份清单时必填，可选旧格式清单；相对路径以仓库根目录为准 |
 | `COURSE_PET_LIMIT` | Day 40 每类最多使用多少张有效图像，默认 500，最少 10 |
 | `COURSE_SMOKE=1` | MNIST 少量数据；猫狗每类 20 张；训练 1 epoch，用于验证流程 |
 | `COURSE_SHOW_PLOTS=1` | 保存图像后显示窗口 |
 
-Day 40 生成的清单记录数据路径、哈希、类别、划分和坏图；Day 41/42 不重新划分，会先校验清单中所选文件的 SHA-256；数据改动后应创建并记录新实验。若改变上限或数据目录，应使用独立输出目录保存新的实验，避免混淆结果。快速验证的精度不具备质量评价意义。
+Day 39～42 每次运行创建独立实验目录，保存配置、数据依据和结果，详见[实验保存与复现](experiments.md)。Day 40 生成的清单记录数据路径、哈希、类别、划分和坏图；Day 41/42 不重新划分，会先校验清单中所选文件的 SHA-256；数据改动后应创建并记录新实验。改变上限或数据目录后会自动生成新的清单目录；存在多份清单时，必须明确选择 COURSE_PET_MANIFEST。快速验证的精度不具备质量评价意义。
 
 ## 修改和验证课程
 
@@ -87,3 +88,7 @@ python tools/check_lessons.py --deep
 深度学习检查生成少量合成图片验证解码、划分、训练、保存、加载、日志管线，同时用本地 MNIST 验证数字分类流程。**合成图片检查不验证真实猫狗分类精度**；完整数据上的学习效果需另外记录。
 
 未标记的 Kafka 和个人实验文件不属于课程检查范围，也不会自动运行。
+
+## 练习与先修导航维护
+
+[学习路线](learning-paths.md)和各课先修导航由 `docs/course-map.json` 生成，修改后运行同步工具。`docs/solutions/day-XX.md` 是可独立编辑的三层练习答案。理论 Markdown 中标记的导航块由工具管理，正文与答案不会被重新生成。
