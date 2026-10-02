@@ -42,6 +42,23 @@ class PetSplits(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, "conflicting labels"):
                 prepare_pets(root)
 
+    def test_png_with_bad_checksum_is_rejected_not_fatal(self):
+        from deep_utils import prepare_pets
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            rng = np.random.default_rng(3)
+            for category in ["Dog", "Cat"]:
+                directory = root / category
+                directory.mkdir()
+                for i in range(10):
+                    Image.fromarray(rng.integers(0, 256, (8, 8, 3), dtype=np.uint8)).save(directory / f"{i}.png")
+            damaged = bytearray((root / "Dog/0.png").read_bytes())
+            damaged[-20] ^= 0xFF  # inside the IDAT checksum; Pillow raises SyntaxError for this
+            (root / "Dog/corrupt.png").write_bytes(bytes(damaged))
+            result = prepare_pets(root)
+            self.assertEqual([r["path"] for r in result["rejected"]], ["Dog/corrupt.png"])
+            self.assertEqual(result["counts"], {"Dog": 10, "Cat": 10})
+
     def test_runtime_can_be_configured_again_after_tensorflow_started(self):
         import tensorflow as tf
         from deep_utils import configure

@@ -63,7 +63,8 @@ def prepare_pets(root, limit_per_class=None):
                 with Image.open(path) as image:
                     image.convert("RGB").load()
                 digest = hashlib.sha256(path.read_bytes()).hexdigest()
-            except (OSError, ValueError, UnidentifiedImageError) as exc:
+            # Pillow reports some damaged PNGs (bad chunk checksum) as SyntaxError.
+            except (OSError, ValueError, SyntaxError, UnidentifiedImageError) as exc:
                 rejected.append({"path": str(path.relative_to(root)), "reason": str(exc)})
                 continue
             if digest in seen:
