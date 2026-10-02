@@ -14,6 +14,25 @@ sys.path.insert(0, str(ROOT / "Code"))
 
 @unittest.skipUnless(importlib.util.find_spec("tensorflow"), "optional deep-learning dependencies")
 class PetSplits(unittest.TestCase):
+    def test_pet_dataset_applies_exif_orientation(self):
+        from deep_utils import pet_dataset
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            pixels = np.zeros((8, 12, 3), dtype=np.uint8)
+            pixels[:, :6] = [255, 0, 0]
+            pixels[:, 6:] = [0, 0, 255]
+            orientation = Image.Exif()
+            orientation[274] = 6
+            Image.fromarray(pixels).save(root / "portrait.jpg", quality=100,
+                                         subsampling=0, exif=orientation)
+            manifest = {"root": str(root), "records": [
+                {"path": "portrait.jpg", "label": 0, "split": "train"}]}
+            actual = next(iter(pet_dataset(manifest, "train", image_size=(12, 8))))[0][0].numpy()
+            self.assertGreater(actual[1, 1, 0], 0.9)  # red at the top
+            self.assertLess(actual[1, 1, 2], 0.1)
+            self.assertGreater(actual[-2, 1, 2], 0.9)  # blue at the bottom
+            self.assertLess(actual[-2, 1, 0], 0.1)
+
     def test_reproducible_disjoint_splits_and_bad_image_reporting(self):
         from deep_utils import prepare_pets
         with tempfile.TemporaryDirectory() as temporary:
