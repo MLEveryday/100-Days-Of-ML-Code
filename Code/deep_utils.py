@@ -132,7 +132,7 @@ def validate_manifest(manifest):
 
 
 def pet_dataset(manifest, split, training=False, image_size=(64, 64)):
-    from PIL import Image
+    from PIL import Image, ImageOps
     records = [r for r in manifest["records"] if r["split"] == split]
     if not records:
         raise ValueError(f"Empty split: {split}")
@@ -148,7 +148,7 @@ def pet_dataset(manifest, split, training=False, image_size=(64, 64)):
     def decode(index):
         record = records[int(index.numpy())]
         with Image.open(root / record["path"]) as image:
-            pixels = np.asarray(image.convert("RGB").resize(
+            pixels = np.asarray(ImageOps.exif_transpose(image).convert("RGB").resize(
                 (width, height), resample=Image.Resampling.BILINEAR), dtype=np.float32) / 255.0
         return pixels, np.float32(record["label"])
 
