@@ -14,6 +14,34 @@ sys.path.insert(0, str(ROOT / "Code"))
 
 @unittest.skipUnless(importlib.util.find_spec("tensorflow"), "optional deep-learning dependencies")
 class PetSplits(unittest.TestCase):
+    def test_malformed_exif_is_rejected_before_dataset_decoding(self):
+        from deep_utils import prepare_pets, pet_dataset, validate_manifest
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            for label, category in enumerate(["Dog", "Cat"]):
+                directory = root / category
+                directory.mkdir()
+                for i in range(10):
+                    pixels = np.full((8, 8, 3), 20 * label + i, dtype=np.uint8)
+                    Image.fromarray(pixels).save(directory / f"{i}.png")
+            damaged = root / "Dog/bad_exif.png"
+            Image.fromarray(np.full((8, 8, 3), 73, dtype=np.uint8)).save(
+                damaged, exif=b"not a TIFF file")
+            with Image.open(damaged) as image:
+                image.verify()
+            with Image.open(damaged) as image:
+                image.convert("RGB").load()
+
+            manifest = prepare_pets(root)
+            self.assertEqual([r["path"] for r in manifest["rejected"]], ["Dog/bad_exif.png"])
+            self.assertIn("not a TIFF file", manifest["rejected"][0]["reason"])
+            self.assertEqual(manifest["counts"], {"Dog": 10, "Cat": 10})
+            validate_manifest(manifest)
+            for split in ["train", "validation", "test"]:
+                images, labels = next(iter(pet_dataset(manifest, split)))
+                self.assertEqual(tuple(images.shape[1:]), (64, 64, 3))
+                self.assertEqual(set(labels.numpy()), {0.0, 1.0})
+
     def test_pet_dataset_applies_exif_orientation(self):
         from deep_utils import pet_dataset
         with tempfile.TemporaryDirectory() as temporary:
