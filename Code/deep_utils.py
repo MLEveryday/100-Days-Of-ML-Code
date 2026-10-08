@@ -41,7 +41,7 @@ def prepare_pets(root, limit_per_class=None):
     for stronger leakage prevention; this dataset does not provide it.
     Scanning stops at limit_per_class: rejected describes inspected files only.
     """
-    from PIL import Image, UnidentifiedImageError
+    from PIL import Image, ImageOps, UnidentifiedImageError
     if limit_per_class is not None and (not isinstance(limit_per_class, int) or limit_per_class < 10):
         raise ValueError("limit_per_class must be an integer >= 10 or None")
     root = Path(root).resolve()
@@ -59,9 +59,9 @@ def prepare_pets(root, limit_per_class=None):
             try:
                 with Image.open(path) as image:
                     image.verify()
-                # verify alone may not decode all pixels.
+                # Decode pixels and apply the same orientation handling as pet_dataset.
                 with Image.open(path) as image:
-                    image.convert("RGB").load()
+                    ImageOps.exif_transpose(image).convert("RGB").load()
                 digest = hashlib.sha256(path.read_bytes()).hexdigest()
             # Pillow reports some damaged PNGs (bad chunk checksum) as SyntaxError.
             except (OSError, ValueError, SyntaxError, UnidentifiedImageError) as exc:
